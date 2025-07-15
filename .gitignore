@@ -1,6 +1,7 @@
 # VS Code 編輯器設定
 .vscode/
 build
+*.in
 
 # 編譯產物（Windows / Linux）
 *.exe
