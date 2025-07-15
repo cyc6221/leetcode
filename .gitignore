@@ -1,0 +1,17 @@
+# VS Code 編輯器設定
+.vscode/
+build
+
+# 編譯產物（Windows / Linux）
+*.exe
+*.out
+*.obj
+*.o
+
+# 暫存檔
+*.log
+*.tmp
+
+# LeetCode 擴充功能的暫存資料夾（如果有）
+.leetcode/
+
