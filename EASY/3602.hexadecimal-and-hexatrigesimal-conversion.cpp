@@ -70,25 +70,24 @@
 // @lc code=start
 class Solution {
 public:
+    string toBase36(int number) {
+        const char* digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            if (number == 0) return "0";
 
-string toBase36(int number) {
-    const char* digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        if (number == 0) return "0";
+            string result;
+            bool isNegative = number < 0;
+            unsigned int n = isNegative ? -number : number;
 
-        string result;
-        bool isNegative = number < 0;
-        unsigned int n = isNegative ? -number : number;
+            while (n > 0) {
+                result += digits[n % 36];
+                n /= 36;
+            }
 
-        while (n > 0) {
-            result += digits[n % 36];
-            n /= 36;
-        }
+            if (isNegative)
+                result += '-';
 
-        if (isNegative)
-            result += '-';
-
-        std::reverse(result.begin(), result.end());
-        return result;
+            reverse(result.begin(), result.end());
+            return result;
     }
 
     string concatHex36(int n) {
