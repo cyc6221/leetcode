@@ -31,9 +31,9 @@ def generate_table():
                 if qid:
                     difficulty = LEVEL_MAP[folder]
                     code_path = f"./{folder}/{file}"
-                    code_link = f"[🔗 View]({code_path})"
+                    code_link = f"[View]({code_path})"
                     lc_url = f"https://leetcode.com/problems/{kebab}/"
-                    lc_link = f"[🌐 Link]({lc_url})"
+                    lc_link = f"[Link]({lc_url})"
                     table += f"| {qid} | {title} | {difficulty} | {lc_link} | {code_link} |\n"
     return table
 
