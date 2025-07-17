@@ -76,7 +76,7 @@ DIFFICULTY_TOTAL = {
     "HARD": 10
 }
 
-def progress_bar(percentage, width=50):
+def progress_bar(percentage, width=60):
     filled = int(percentage * width)
     return "[" + "█" * filled + "░" * (width - filled) + f"] {int(percentage * 100)}%"
 
