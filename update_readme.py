@@ -22,19 +22,28 @@ def generate_table():
     table = "| ID | Title | Difficulty | LeetCode | Code |\n"
     table += "|----|-------|------------|----------|------|\n"
 
+    entries = []
+
     for folder in ['EASY', 'MEDIUM', 'HARD']:
         if not os.path.exists(folder):
             continue
-        for file in sorted(os.listdir(folder)):
+        for file in os.listdir(folder):
             if file.endswith(".cpp"):
                 qid, title, kebab = extract_info(file)
                 if qid:
                     difficulty = LEVEL_MAP[folder]
                     code_path = f"./{folder}/{file}"
-                    code_link = f"[View]({code_path})"
                     lc_url = f"https://leetcode.com/problems/{kebab}/"
-                    lc_link = f"[Link]({lc_url})"
-                    table += f"| {qid} | {title} | {difficulty} | {lc_link} | {code_link} |\n"
+                    entries.append((int(qid), qid, title, difficulty, lc_url, code_path))
+
+    # Sort by numeric ID
+    entries.sort()
+
+    for _, qid, title, difficulty, lc_url, code_path in entries:
+        code_link = f"[View]({code_path})"
+        lc_link = f"[Link]({lc_url})"
+        table += f"| {qid} | {title} | {difficulty} | {lc_link} | {code_link} |\n"
+
     return table
 
 # Replace the LEETCODE_TABLE block in README.md
