@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy | 5 |
-| Medium | 3 |
+| Medium | 4 |
 | Hard | 1 |
-| **Total** | 9 |
+| **Total** | 10 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 16%
 
-**Medium**: 3 / 20
+**Medium**: 4 / 20
 
-[█████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 15%
+[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
 
 **Hard**: 1 / 10
 
@@ -52,6 +52,7 @@ This is a 30-day LeetCode challenge.
 | 735 | Asteroid Collision | Medium | [Link](https://leetcode.com/problems/asteroid-collision/) | [View](./MEDIUM/735.asteroid-collision.cpp) |
 | 3280 | Convert Date To Binary | Easy | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
+| 3315 | Construct The Minimum Bitwise Array Ii | Medium | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
 | 3550 | Smallest Index With Digit Sum Equal To Index | Easy | [Link](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | [View](./EASY/3550.smallest-index-with-digit-sum-equal-to-index.cpp) |
 | 3560 | Find Minimum Log Transportation Cost | Easy | [Link](https://leetcode.com/problems/find-minimum-log-transportation-cost/) | [View](./EASY/3560.find-minimum-log-transportation-cost.cpp) |
 | 3600 | Maximize Spanning Tree Stability With Upgrades | Hard | [Link](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | [View](./HARD/3600.maximize-spanning-tree-stability-with-upgrades.cpp) |
