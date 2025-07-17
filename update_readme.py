@@ -46,26 +46,61 @@ def generate_table():
 
     return table
 
+def generate_summary_table():
+    summary = {"EASY": 0, "MEDIUM": 0, "HARD": 0}
+    total = 0
+
+    for folder in summary:
+        path = folder
+        if not os.path.exists(path):
+            continue
+        for file in os.listdir(path):
+            if file.endswith(".cpp"):
+                summary[folder] += 1
+                total += 1
+
+    table = "## ✅ Problem Count Summary\n\n"
+    table += "| Difficulty | Count |\n"
+    table += "|------------|-------|\n"
+    for k in ["EASY", "MEDIUM", "HARD"]:
+        table += f"| {LEVEL_MAP[k]} | {summary[k]} |\n"
+    table += f"| **Total** | {total} |\n"
+    return table
+
 # Replace the LEETCODE_TABLE block in README.md
 def update_readme():
-    start_tag = "<!-- LEETCODE_TABLE_START -->"
-    end_tag = "<!-- LEETCODE_TABLE_END -->"
+    start_table_tag = "<!-- LEETCODE_TABLE_START -->"
+    end_table_tag = "<!-- LEETCODE_TABLE_END -->"
+
+    start_summary_tag = "<!-- LEETCODE_SUMMARY_START -->"
+    end_summary_tag = "<!-- LEETCODE_SUMMARY_END -->"
 
     with open("README.md", "r", encoding="utf-8") as f:
         content = f.read()
 
     table = generate_table()
-    new_content = re.sub(
-        f"{start_tag}.*?{end_tag}",
-        f"{start_tag}\n{table}\n{end_tag}",
+    summary = generate_summary_table()
+
+    # 替換題目表格區塊
+    content = re.sub(
+        f"{start_table_tag}.*?{end_table_tag}",
+        f"{start_table_tag}\n{table}\n{end_table_tag}",
+        content,
+        flags=re.DOTALL
+    )
+
+    # 替換統計表格區塊
+    content = re.sub(
+        f"{start_summary_tag}.*?{end_summary_tag}",
+        f"{start_summary_tag}\n{summary}\n{end_summary_tag}",
         content,
         flags=re.DOTALL
     )
 
     with open("README.md", "w", encoding="utf-8") as f:
-        f.write(new_content)
+        f.write(content)
 
-    print("✅ README.md updated!")
+    print("✅ README.md updated with summary and table.")
 
 if __name__ == "__main__":
     update_readme()

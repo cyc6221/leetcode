@@ -2,6 +2,18 @@
 
 This repository contains my personal solutions to problems on [LeetCode](https://leetcode.com/), written in **C++**.
 
+<!-- LEETCODE_SUMMARY_START -->
+## Problem Count Summary
+
+| Difficulty | Count |
+|------------|-------|
+| Easy | 3 |
+| Medium | 3 |
+| Hard | 0 |
+| **Total** | 6 |
+
+<!-- LEETCODE_SUMMARY_END -->
+
 ## Completed Problem List
 
 <!-- LEETCODE_TABLE_START -->
