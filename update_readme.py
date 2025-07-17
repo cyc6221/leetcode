@@ -95,7 +95,7 @@ def generate_progress_block():
         total = DIFFICULTY_TOTAL[level]
         pct = done / total if total else 0
         bar = progress_bar(pct)
-        block += f"**{LEVEL_MAP[level]}**: {done} / {total}\n{bar}\n\n"
+        block += f"**{LEVEL_MAP[level]}**: {done} / {total}\n\n{bar}\n\n"
     return block.strip()
 
 
