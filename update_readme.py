@@ -19,7 +19,8 @@ def extract_info(filename):
 
 # Generate the markdown table
 def generate_table():
-    table = "| ID | Title | Difficulty | LeetCode | Code |\n"
+    table = "## Completed Problem List\n\n"
+    table += "| ID | Title | Difficulty | LeetCode | Code |\n"
     table += "|----|-------|------------|----------|------|\n"
 
     entries = []
@@ -59,13 +60,46 @@ def generate_summary_table():
                 summary[folder] += 1
                 total += 1
 
-    table = "## ✅ Problem Count Summary\n\n"
+    table = "## Problem Count Summary\n\n"
     table += "| Difficulty | Count |\n"
     table += "|------------|-------|\n"
     for k in ["EASY", "MEDIUM", "HARD"]:
         table += f"| {LEVEL_MAP[k]} | {summary[k]} |\n"
     table += f"| **Total** | {total} |\n"
     return table
+
+########################################################################
+
+DIFFICULTY_TOTAL = {
+    "EASY": 30,
+    "MEDIUM": 20,
+    "HARD": 10
+}
+
+def progress_bar(percentage, width=50):
+    filled = int(percentage * width)
+    return "[" + "█" * filled + "░" * (width - filled) + f"] {int(percentage * 100)}%"
+
+def generate_progress_block():
+    counts = {"EASY": 0, "MEDIUM": 0, "HARD": 0}
+    for level in counts:
+        path = level
+        if os.path.exists(path):
+            for file in os.listdir(path):
+                if file.endswith(".cpp"):
+                    counts[level] += 1
+
+    block = "## Difficulty Progress\n\n"
+    for level in ["EASY", "MEDIUM", "HARD"]:
+        done = counts[level]
+        total = DIFFICULTY_TOTAL[level]
+        pct = done / total if total else 0
+        bar = progress_bar(pct)
+        block += f"**{LEVEL_MAP[level]}**: {done} / {total}\n{bar}\n\n"
+    return block.strip()
+
+
+################################################################
 
 # Replace the LEETCODE_TABLE block in README.md
 def update_readme():
@@ -75,13 +109,16 @@ def update_readme():
     start_summary_tag = "<!-- LEETCODE_SUMMARY_START -->"
     end_summary_tag = "<!-- LEETCODE_SUMMARY_END -->"
 
+    progress_start = "<!-- LEETCODE_PROGRESS_START -->"
+    progress_end = "<!-- LEETCODE_PROGRESS_END -->"
+
     with open("README.md", "r", encoding="utf-8") as f:
         content = f.read()
 
     table = generate_table()
     summary = generate_summary_table()
+    progress_block = generate_progress_block()
 
-    # 替換題目表格區塊
     content = re.sub(
         f"{start_table_tag}.*?{end_table_tag}",
         f"{start_table_tag}\n{table}\n{end_table_tag}",
@@ -89,7 +126,6 @@ def update_readme():
         flags=re.DOTALL
     )
 
-    # 替換統計表格區塊
     content = re.sub(
         f"{start_summary_tag}.*?{end_summary_tag}",
         f"{start_summary_tag}\n{summary}\n{end_summary_tag}",
@@ -97,10 +133,17 @@ def update_readme():
         flags=re.DOTALL
     )
 
+    content = re.sub(
+        f"{progress_start}.*?{progress_end}",
+        f"{progress_start}\n{progress_block}\n{progress_end}",
+        content,
+        flags=re.DOTALL
+    )
+
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(content)
 
-    print("✅ README.md updated with summary and table.")
+    print("README.md updated.")
 
 if __name__ == "__main__":
     update_readme()

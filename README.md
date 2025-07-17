@@ -2,6 +2,20 @@
 
 This repository contains my personal solutions to problems on [LeetCode](https://leetcode.com/), written in **C++**.
 
+* File Naming Convention : `{id}.{kebab-case-title}.cpp`
+
+---
+
+## Goal #1
+
+This is a 30-day LeetCode challenge.
+
+- **Duration**: 2025-07-15 to 2025-08-13
+- **Goal**:
+  - Solve **30 Easy** problems
+  - Solve **20 Medium** problems
+  - Solve **10 Hard** problems
+
 <!-- LEETCODE_SUMMARY_START -->
 ## Problem Count Summary
 
@@ -14,9 +28,22 @@ This repository contains my personal solutions to problems on [LeetCode](https:/
 
 <!-- LEETCODE_SUMMARY_END -->
 
-## Completed Problem List
+<!-- LEETCODE_PROGRESS_START -->
+## Difficulty Progress
+
+**Easy**: 3 / 30
+[█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
+
+**Medium**: 3 / 20
+[███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 15%
+
+**Hard**: 0 / 10
+[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%
+<!-- LEETCODE_PROGRESS_END -->
 
 <!-- LEETCODE_TABLE_START -->
+## Completed Problem List
+
 | ID | Title | Difficulty | LeetCode | Code |
 |----|-------|------------|----------|------|
 | 735 | Asteroid Collision | Medium | [Link](https://leetcode.com/problems/asteroid-collision/) | [View](./MEDIUM/735.asteroid-collision.cpp) |
@@ -27,7 +54,3 @@ This repository contains my personal solutions to problems on [LeetCode](https:/
 | 3613 | Minimize Maximum Component Cost | Medium | [Link](https://leetcode.com/problems/minimize-maximum-component-cost/) | [View](./MEDIUM/3613.minimize-maximum-component-cost.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
-
-## File Naming Convention
-
-`{id}.{kebab-case-title}.cpp`
