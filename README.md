@@ -23,8 +23,8 @@ This is a 30-day LeetCode challenge.
 |------------|-------|
 | Easy | 4 |
 | Medium | 3 |
-| Hard | 0 |
-| **Total** | 7 |
+| Hard | 1 |
+| **Total** | 8 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -39,9 +39,9 @@ This is a 30-day LeetCode challenge.
 
 [███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 15%
 
-**Hard**: 0 / 10
+**Hard**: 1 / 10
 
-[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%
+[█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
 <!-- LEETCODE_PROGRESS_END -->
 
 <!-- LEETCODE_TABLE_START -->
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3280 | Convert Date To Binary | Easy | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3550 | Smallest Index With Digit Sum Equal To Index | Easy | [Link](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | [View](./EASY/3550.smallest-index-with-digit-sum-equal-to-index.cpp) |
 | 3560 | Find Minimum Log Transportation Cost | Easy | [Link](https://leetcode.com/problems/find-minimum-log-transportation-cost/) | [View](./EASY/3560.find-minimum-log-transportation-cost.cpp) |
+| 3600 | Maximize Spanning Tree Stability With Upgrades | Hard | [Link](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | [View](./HARD/3600.maximize-spanning-tree-stability-with-upgrades.cpp) |
 | 3602 | Hexadecimal And Hexatrigesimal Conversion | Easy | [Link](https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion/) | [View](./EASY/3602.hexadecimal-and-hexatrigesimal-conversion.cpp) |
 | 3612 | Process String With Special Operations I | Medium | [Link](https://leetcode.com/problems/process-string-with-special-operations-i/) | [View](./MEDIUM/3612.process-string-with-special-operations-i.cpp) |
 | 3613 | Minimize Maximum Component Cost | Medium | [Link](https://leetcode.com/problems/minimize-maximum-component-cost/) | [View](./MEDIUM/3613.minimize-maximum-component-cost.cpp) |
