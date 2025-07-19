@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 6 |
+| Easy | 7 |
 | Medium | 4 |
 | Hard | 1 |
-| **Total** | 11 |
+| **Total** | 12 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 6 / 30
+**Easy**: 7 / 30
 
-[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
+[██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 23%
 
 **Medium**: 4 / 20
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3280 | Convert Date To Binary | Easy | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Medium | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
+| 3541 | Find Most Frequent Vowel And Consonant | Easy | [Link](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/) | [View](./EASY/3541.find-most-frequent-vowel-and-consonant.cpp) |
 | 3550 | Smallest Index With Digit Sum Equal To Index | Easy | [Link](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | [View](./EASY/3550.smallest-index-with-digit-sum-equal-to-index.cpp) |
 | 3560 | Find Minimum Log Transportation Cost | Easy | [Link](https://leetcode.com/problems/find-minimum-log-transportation-cost/) | [View](./EASY/3560.find-minimum-log-transportation-cost.cpp) |
 | 3591 | Check If Any Element Has Prime Frequency | Easy | [Link](https://leetcode.com/problems/check-if-any-element-has-prime-frequency/) | [View](./EASY/3591.check-if-any-element-has-prime-frequency.cpp) |
