@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 8 |
+| Easy | 9 |
 | Medium | 4 |
 | Hard | 1 |
-| **Total** | 13 |
+| **Total** | 14 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 8 / 30
+**Easy**: 9 / 30
 
-[████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 26%
+[██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 30%
 
 **Medium**: 4 / 20
 
@@ -57,6 +57,7 @@ This is a 30-day LeetCode challenge.
 | 3545 | Minimum Deletions For At Most K Distinct Characters | Easy | [Link](https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/) | [View](./EASY/3545.minimum-deletions-for-at-most-k-distinct-characters.cpp) |
 | 3550 | Smallest Index With Digit Sum Equal To Index | Easy | [Link](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | [View](./EASY/3550.smallest-index-with-digit-sum-equal-to-index.cpp) |
 | 3560 | Find Minimum Log Transportation Cost | Easy | [Link](https://leetcode.com/problems/find-minimum-log-transportation-cost/) | [View](./EASY/3560.find-minimum-log-transportation-cost.cpp) |
+| 3582 | Generate Tag For Video Caption | Easy | [Link](https://leetcode.com/problems/generate-tag-for-video-caption/) | [View](./EASY/3582.generate-tag-for-video-caption.cpp) |
 | 3591 | Check If Any Element Has Prime Frequency | Easy | [Link](https://leetcode.com/problems/check-if-any-element-has-prime-frequency/) | [View](./EASY/3591.check-if-any-element-has-prime-frequency.cpp) |
 | 3600 | Maximize Spanning Tree Stability With Upgrades | Hard | [Link](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | [View](./HARD/3600.maximize-spanning-tree-stability-with-upgrades.cpp) |
 | 3602 | Hexadecimal And Hexatrigesimal Conversion | Easy | [Link](https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion/) | [View](./EASY/3602.hexadecimal-and-hexatrigesimal-conversion.cpp) |
