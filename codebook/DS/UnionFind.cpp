@@ -40,6 +40,16 @@ int size(vector<int>& uf, int x) {
     return -uf[find(uf, x)];
 }
 
+// Count how many connected components (distinct sets) are currently in the structure
+int count_components(const vector<int>& uf) {
+    int count = 0;
+    for (int i = 0; i < uf.size(); ++i) {
+        if (uf[i] < 0) ++count; // Root node of a component
+    }
+    return count;
+}
+
+
 /*
 Usage example:
 
@@ -60,3 +70,36 @@ int main() {
     int sz = size(uf, 0);  // sz = 3
 }
 */
+
+/* COPY HERE */
+
+void init_union_find(vector<int>& uf, int n) {
+    uf.assign(n, -1);
+}
+int find(vector<int>& uf, int x) {
+    if (uf[x] < 0) return x;
+    return uf[x] = find(uf, uf[x]);
+}
+bool unite(vector<int>& uf, int x, int y) {
+    x = find(uf, x);
+    y = find(uf, y);
+    if (x == y) return false;
+
+    if (uf[x] > uf[y]) swap(x, y);
+    uf[x] += uf[y];
+    uf[y] = x;
+    return true;
+}
+bool connected(vector<int>& uf, int x, int y) {
+    return find(uf, x) == find(uf, y);
+}
+int size(vector<int>& uf, int x) {
+    return -uf[find(uf, x)];
+}
+int count_components(const vector<int>& uf) {
+    int count = 0;
+    for (int i = 0; i < uf.size(); ++i) {
+        if (uf[i] < 0) ++count;
+    }
+    return count;
+}
