@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy | 10 |
-| Medium | 4 |
+| Medium | 5 |
 | Hard | 1 |
-| **Total** | 15 |
+| **Total** | 16 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 33%
 
-**Medium**: 4 / 20
+**Medium**: 5 / 20
 
-[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
+[███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 25%
 
 **Hard**: 1 / 10
 
@@ -62,6 +62,7 @@ This is a 30-day LeetCode challenge.
 | 3591 | Check If Any Element Has Prime Frequency | Easy | [Link](https://leetcode.com/problems/check-if-any-element-has-prime-frequency/) | [View](./EASY/3591.check-if-any-element-has-prime-frequency.cpp) |
 | 3600 | Maximize Spanning Tree Stability With Upgrades | Hard | [Link](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | [View](./HARD/3600.maximize-spanning-tree-stability-with-upgrades.cpp) |
 | 3602 | Hexadecimal And Hexatrigesimal Conversion | Easy | [Link](https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion/) | [View](./EASY/3602.hexadecimal-and-hexatrigesimal-conversion.cpp) |
+| 3608 | Minimum Time For K Connected Components | Medium | [Link](https://leetcode.com/problems/minimum-time-for-k-connected-components/) | [View](./MEDIUM/3608.minimum-time-for-k-connected-components.cpp) |
 | 3612 | Process String With Special Operations I | Medium | [Link](https://leetcode.com/problems/process-string-with-special-operations-i/) | [View](./MEDIUM/3612.process-string-with-special-operations-i.cpp) |
 | 3613 | Minimize Maximum Component Cost | Medium | [Link](https://leetcode.com/problems/minimize-maximum-component-cost/) | [View](./MEDIUM/3613.minimize-maximum-component-cost.cpp) |
 
