@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 12 |
+| Easy | 13 |
 | Medium | 5 |
 | Hard | 1 |
-| **Total** | 18 |
+| **Total** | 19 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 12 / 30
+**Easy**: 13 / 30
 
-[████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 40%
+[██████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 43%
 
 **Medium**: 5 / 20
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3280 | Convert Date To Binary | Easy | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Medium | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
+| 3507 | Minimum Pair Removal To Sort Array I | Easy | [Link](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/) | [View](./EASY/3507.minimum-pair-removal-to-sort-array-i.cpp) |
 | 3512 | Minimum Operations To Make Array Sum Divisible By K | Easy | [Link](https://leetcode.com/problems/minimum-operations-to-make-array-sum-divisible-by-k/) | [View](./EASY/3512.minimum-operations-to-make-array-sum-divisible-by-k.cpp) |
 | 3516 | Find Closest Person | Easy | [Link](https://leetcode.com/problems/find-closest-person/) | [View](./EASY/3516.find-closest-person.cpp) |
 | 3536 | Maximum Product Of Two Digits | Easy | [Link](https://leetcode.com/problems/maximum-product-of-two-digits/) | [View](./EASY/3536.maximum-product-of-two-digits.cpp) |
