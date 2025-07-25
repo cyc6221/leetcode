@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 10 |
+| Easy | 11 |
 | Medium | 5 |
 | Hard | 1 |
-| **Total** | 16 |
+| **Total** | 17 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 10 / 30
+**Easy**: 11 / 30
 
-[████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 33%
+[██████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 36%
 
 **Medium**: 5 / 20
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3280 | Convert Date To Binary | Easy | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Medium | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
+| 3516 | Find Closest Person | Easy | [Link](https://leetcode.com/problems/find-closest-person/) | [View](./EASY/3516.find-closest-person.cpp) |
 | 3536 | Maximum Product Of Two Digits | Easy | [Link](https://leetcode.com/problems/maximum-product-of-two-digits/) | [View](./EASY/3536.maximum-product-of-two-digits.cpp) |
 | 3541 | Find Most Frequent Vowel And Consonant | Easy | [Link](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/) | [View](./EASY/3541.find-most-frequent-vowel-and-consonant.cpp) |
 | 3545 | Minimum Deletions For At Most K Distinct Characters | Easy | [Link](https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/) | [View](./EASY/3545.minimum-deletions-for-at-most-k-distinct-characters.cpp) |
