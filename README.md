@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 15 |
+| Easy | 16 |
 | Medium | 6 |
 | Hard | 1 |
-| **Total** | 22 |
+| **Total** | 23 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 15 / 30
+**Easy**: 16 / 30
 
-[██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 50%
+[████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 53%
 
 **Medium**: 6 / 20
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3280 | Convert Date To Binary | Easy | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Medium | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
+| 3487 | Maximum Unique Subarray Sum After Deletion | Easy | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/) | [View](./EASY/3487.maximum-unique-subarray-sum-after-deletion.cpp) |
 | 3498 | Reverse Degree Of A String | Easy | [Link](https://leetcode.com/problems/reverse-degree-of-a-string/) | [View](./EASY/3498.reverse-degree-of-a-string.cpp) |
 | 3502 | Minimum Cost To Reach Every Position | Easy | [Link](https://leetcode.com/problems/minimum-cost-to-reach-every-position/) | [View](./EASY/3502.minimum-cost-to-reach-every-position.cpp) |
 | 3507 | Minimum Pair Removal To Sort Array I | Easy | [Link](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/) | [View](./EASY/3507.minimum-pair-removal-to-sort-array-i.cpp) |
