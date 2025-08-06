@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 18 |
+| Easy | 19 |
 | Medium | 6 |
 | Hard | 1 |
-| **Total** | 25 |
+| **Total** | 26 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 18 / 30
+**Easy**: 19 / 30
 
-[████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░] 60%
+[██████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░] 63%
 
 **Medium**: 6 / 20
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3280 | Convert Date To Binary | Easy | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Medium | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
+| 3471 | Find The Largest Almost Missing Integer | Easy | [Link](https://leetcode.com/problems/find-the-largest-almost-missing-integer/) | [View](./EASY/3471.find-the-largest-almost-missing-integer.cpp) |
 | 3477 | Fruits Into Baskets Ii | Easy | [Link](https://leetcode.com/problems/fruits-into-baskets-ii/) | [View](./EASY/3477.fruits-into-baskets-ii.cpp) |
 | 3483 | Unique 3 Digit Even Numbers | Easy | [Link](https://leetcode.com/problems/unique-3-digit-even-numbers/) | [View](./EASY/3483.unique-3-digit-even-numbers.cpp) |
 | 3487 | Maximum Unique Subarray Sum After Deletion | Easy | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/) | [View](./EASY/3487.maximum-unique-subarray-sum-after-deletion.cpp) |
