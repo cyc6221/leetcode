@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 17 |
+| Easy | 18 |
 | Medium | 6 |
 | Hard | 1 |
-| **Total** | 24 |
+| **Total** | 25 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 17 / 30
+**Easy**: 18 / 30
 
-[██████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░] 56%
+[████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░] 60%
 
 **Medium**: 6 / 20
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3280 | Convert Date To Binary | Easy | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Medium | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
+| 3477 | Fruits Into Baskets Ii | Easy | [Link](https://leetcode.com/problems/fruits-into-baskets-ii/) | [View](./EASY/3477.fruits-into-baskets-ii.cpp) |
 | 3483 | Unique 3 Digit Even Numbers | Easy | [Link](https://leetcode.com/problems/unique-3-digit-even-numbers/) | [View](./EASY/3483.unique-3-digit-even-numbers.cpp) |
 | 3487 | Maximum Unique Subarray Sum After Deletion | Easy | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/) | [View](./EASY/3487.maximum-unique-subarray-sum-after-deletion.cpp) |
 | 3498 | Reverse Degree Of A String | Easy | [Link](https://leetcode.com/problems/reverse-degree-of-a-string/) | [View](./EASY/3498.reverse-degree-of-a-string.cpp) |
