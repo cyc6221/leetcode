@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 20 |
+| Easy | 21 |
 | Medium | 6 |
 | Hard | 1 |
-| **Total** | 27 |
+| **Total** | 28 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 20 / 30
+**Easy**: 21 / 30
 
-[████████████████████████████████████████░░░░░░░░░░░░░░░░░░░░] 66%
+[██████████████████████████████████████████░░░░░░░░░░░░░░░░░░] 70%
 
 **Medium**: 6 / 20
 
@@ -58,6 +58,7 @@ This is a 30-day LeetCode challenge.
 | 3477 | Fruits Into Baskets Ii | Easy | 1295.6 | [Link](https://leetcode.com/problems/fruits-into-baskets-ii/) | [View](./EASY/3477.fruits-into-baskets-ii.cpp) |
 | 3483 | Unique 3 Digit Even Numbers | Easy | 1323.6 | [Link](https://leetcode.com/problems/unique-3-digit-even-numbers/) | [View](./EASY/3483.unique-3-digit-even-numbers.cpp) |
 | 3487 | Maximum Unique Subarray Sum After Deletion | Easy | 1399.3 | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/) | [View](./EASY/3487.maximum-unique-subarray-sum-after-deletion.cpp) |
+| 3492 | Maximum Containers On A Ship | Easy | 1140.4 | [Link](https://leetcode.com/problems/maximum-containers-on-a-ship/) | [View](./EASY/3492.maximum-containers-on-a-ship.cpp) |
 | 3498 | Reverse Degree Of A String | Easy | 1201.3 | [Link](https://leetcode.com/problems/reverse-degree-of-a-string/) | [View](./EASY/3498.reverse-degree-of-a-string.cpp) |
 | 3502 | Minimum Cost To Reach Every Position | Easy | 1243.9 | [Link](https://leetcode.com/problems/minimum-cost-to-reach-every-position/) | [View](./EASY/3502.minimum-cost-to-reach-every-position.cpp) |
 | 3507 | Minimum Pair Removal To Sort Array I | Easy | 1348.7 | [Link](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/) | [View](./EASY/3507.minimum-pair-removal-to-sort-array-i.cpp) |
