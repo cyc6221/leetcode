@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 23 |
+| Easy | 24 |
 | Medium | 6 |
 | Hard | 1 |
-| **Total** | 30 |
+| **Total** | 31 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 23 / 30
+**Easy**: 24 / 30
 
-[██████████████████████████████████████████████░░░░░░░░░░░░░░] 76%
+[████████████████████████████████████████████████░░░░░░░░░░░░] 80%
 
 **Medium**: 6 / 20
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3280 | Convert Date To Binary | Easy | 1205.7 | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | 1378.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Medium | 1714.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
+| 3407 | Substring Matching Pattern | Easy | 1472.7 | [Link](https://leetcode.com/problems/substring-matching-pattern/) | [View](./EASY/3407.substring-matching-pattern.cpp) |
 | 3411 | Maximum Subarray With Equal Products | Easy | 1443.2 | [Link](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | [View](./EASY/3411.maximum-subarray-with-equal-products.cpp) |
 | 3461 | Check If Digits Are Equal In String After Operations I | Easy | 1189.4 | [Link](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/) | [View](./EASY/3461.check-if-digits-are-equal-in-string-after-operations-i.cpp) |
 | 3467 | Transform Array By Parity | Easy | 1165.8 | [Link](https://leetcode.com/problems/transform-array-by-parity/) | [View](./EASY/3467.transform-array-by-parity.cpp) |
