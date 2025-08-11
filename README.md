@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 24 |
+| Easy | 25 |
 | Med | 6 |
 | Hard | 1 |
-| **Total** | 31 |
+| **Total** | 32 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 24 / 30
+**Easy**: 25 / 30
 
-[████████████████████████████████████████████████░░░░░░░░░░░░] 80%
+[██████████████████████████████████████████████████░░░░░░░░░░] 83%
 
 **Med**: 6 / 20
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3280 | Convert Date To Binary | Easy | 1205.7 | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | 1378.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Med | 1714.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
+| 3402 | Minimum Operations To Make Columns Strictly Increasing | Easy | 1245.8 | [Link](https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/) | [View](./EASY/3402.minimum-operations-to-make-columns-strictly-increasing.cpp) |
 | 3407 | Substring Matching Pattern | Easy | 1472.7 | [Link](https://leetcode.com/problems/substring-matching-pattern/) | [View](./EASY/3407.substring-matching-pattern.cpp) |
 | 3411 | Maximum Subarray With Equal Products | Easy | 1443.2 | [Link](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | [View](./EASY/3411.maximum-subarray-with-equal-products.cpp) |
 | 3461 | Check If Digits Are Equal In String After Operations I | Easy | 1189.4 | [Link](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/) | [View](./EASY/3461.check-if-digits-are-equal-in-string-after-operations-i.cpp) |
