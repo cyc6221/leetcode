@@ -21,6 +21,8 @@ def extract_info(filename):
         return qid, title_display, kebab_title
     return None, None, None
 
+##################################################################
+
 RATINGS_URL = "https://raw.githubusercontent.com/zerotrac/leetcode_problem_rating/main/ratings.txt"
 
 def get_ratings_map(url: str = RATINGS_URL) -> dict[int, float]:
@@ -64,6 +66,8 @@ def _fmt_rating(x: float | None) -> str:
         return "-"
     return str(int(x)) if abs(x - int(x)) < 1e-9 else f"{x:.1f}"
 
+##################################################################
+
 # Generate the markdown table
 def generate_table():
     table = "## Completed Problem List\n\n"
@@ -85,16 +89,11 @@ def generate_table():
                     code_path = f"./{folder}/{file}"
                     lc_url = f"https://leetcode.com/problems/{kebab}/"
                     rating_val = rmap.get(pid)
-                    # entries.append(pid, qid, title, difficulty, lc_url, code_path))
                     entries.append((pid, qid, title, difficulty, rating_val, lc_url, code_path))
 
     # Sort by numeric ID
     entries.sort()
 
-    # for _, qid, title, difficulty, lc_url, code_path in entries:
-    #     code_link = f"[View]({code_path})"
-    #     lc_link = f"[Link]({lc_url})"
-    #     table += f"| {qid} | {title} | {difficulty} | {lc_link} | {code_link} |\n"
     for _, qid, title, difficulty, rating_val, lc_url, code_path in entries:
         code_link = f"[View]({code_path})"
         lc_link = f"[Link]({lc_url})"
