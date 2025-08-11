@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 27 |
+| Easy | 28 |
 | Med | 6 |
 | Hard | 1 |
-| **Total** | 34 |
+| **Total** | 35 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 27 / 30
+**Easy**: 28 / 30
 
-[██████████████████████████████████████████████████████░░░░░░] 90%
+[████████████████████████████████████████████████████████░░░░] 93%
 
 **Med**: 6 / 20
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3280 | Convert Date To Binary | Easy | 1205.7 | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | 1378.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Med | 1714.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
+| 3386 | Button With Longest Push Time | Easy | 1255.5 | [Link](https://leetcode.com/problems/button-with-longest-push-time/) | [View](./EASY/3386.button-with-longest-push-time.cpp) |
 | 3392 | Count Subarrays Of Length Three With A Condition | Easy | 1200.7 | [Link](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | [View](./EASY/3392.count-subarrays-of-length-three-with-a-condition.cpp) |
 | 3396 | Minimum Number Of Operations To Make Elements In Array Distinct | Easy | 1299.4 | [Link](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/) | [View](./EASY/3396.minimum-number-of-operations-to-make-elements-in-array-distinct.cpp) |
 | 3402 | Minimum Operations To Make Columns Strictly Increasing | Easy | 1245.8 | [Link](https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/) | [View](./EASY/3402.minimum-operations-to-make-columns-strictly-increasing.cpp) |
