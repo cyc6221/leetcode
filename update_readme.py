@@ -1,5 +1,9 @@
 import os
 import re
+import pandas as pd
+import csv
+import io
+import urllib.request
 
 LEVEL_MAP = {
     'EASY': 'Easy',
@@ -17,13 +21,62 @@ def extract_info(filename):
         return qid, title_display, kebab_title
     return None, None, None
 
+RATINGS_URL = "https://raw.githubusercontent.com/zerotrac/leetcode_problem_rating/main/ratings.txt"
+
+def get_ratings_map(url: str = RATINGS_URL) -> dict[int, float]:
+    """抓取 ratings.txt，回傳 {problem_id: rating} 對照表（標準庫實作）。"""
+    with urllib.request.urlopen(url) as resp:
+        text = resp.read().decode("utf-8", errors="replace")
+
+    reader = csv.DictReader(io.StringIO(text), delimiter="\t")
+    if not reader.fieldnames:
+        raise ValueError("ratings.txt 解析不到表頭欄位")
+
+    lower = {c.lower(): c for c in reader.fieldnames}
+    id_col = next((lower.get(k) for k in ("id", "problem id", "problem_id", "problemid")), None)
+    rating_col = next((lower.get(k) for k in ("rating", "difficulty", "difficulty_rating")), None)
+    if not id_col or not rating_col:
+        raise ValueError(f"找不到 ID 或 Rating 欄位，表頭為：{reader.fieldnames}")
+
+    out: dict[int, float] = {}
+    for row in reader:
+        id_raw = (row.get(id_col) or "").strip()
+        rating_raw = (row.get(rating_col) or "").strip()
+        try:
+            pid = int(id_raw)
+            r = float(rating_raw)
+        except ValueError:
+            continue
+        # 若同一 ID 出現多筆，取較大的 rating（可依你需求改成首次或均值）
+        out[pid] = max(out.get(pid, float("-inf")), r)
+    return out
+
+# 簡單快取，避免每次 generate_table 都去抓網路
+_RATINGS_CACHE: dict[int, float] | None = None
+def ratings_map() -> dict[int, float]:
+    global _RATINGS_CACHE
+    if _RATINGS_CACHE is None:
+        _RATINGS_CACHE = get_ratings_map()
+    return _RATINGS_CACHE
+
+def _fmt_rating(x: float | None) -> str:
+    if x is None:
+        return "-"
+    return str(int(x)) if abs(x - int(x)) < 1e-9 else f"{x:.1f}"
+
 # Generate the markdown table
 def generate_table():
+    # table = "## Completed Problem List\n\n"
+    # table += "| ID | Title | Difficulty | LeetCode | Code |\n"
+    # table += "|----|-------|------------|----------|------|\n"
     table = "## Completed Problem List\n\n"
-    table += "| ID | Title | Difficulty | LeetCode | Code |\n"
-    table += "|----|-------|------------|----------|------|\n"
+    table += "| ID | Title | Difficulty | Rating | LeetCode | Code |\n"
+    table += "|----|-------|------------|--------|----------|------|\n"
+
 
     entries = []
+    rmap = ratings_map()
+
 
     for folder in ['EASY', 'MEDIUM', 'HARD']:
         if not os.path.exists(folder):
@@ -32,18 +85,25 @@ def generate_table():
             if file.endswith(".cpp"):
                 qid, title, kebab = extract_info(file)
                 if qid:
+                    pid = int(qid)
                     difficulty = LEVEL_MAP[folder]
                     code_path = f"./{folder}/{file}"
                     lc_url = f"https://leetcode.com/problems/{kebab}/"
-                    entries.append((int(qid), qid, title, difficulty, lc_url, code_path))
+                    rating_val = rmap.get(pid)
+                    # entries.append(pid, qid, title, difficulty, lc_url, code_path))
+                    entries.append((pid, qid, title, difficulty, rating_val, lc_url, code_path))
 
     # Sort by numeric ID
     entries.sort()
 
-    for _, qid, title, difficulty, lc_url, code_path in entries:
+    # for _, qid, title, difficulty, lc_url, code_path in entries:
+    #     code_link = f"[View]({code_path})"
+    #     lc_link = f"[Link]({lc_url})"
+    #     table += f"| {qid} | {title} | {difficulty} | {lc_link} | {code_link} |\n"
+    for _, qid, title, difficulty, rating_val, lc_url, code_path in entries:
         code_link = f"[View]({code_path})"
         lc_link = f"[Link]({lc_url})"
-        table += f"| {qid} | {title} | {difficulty} | {lc_link} | {code_link} |\n"
+        table += f"| {qid} | {title} | {difficulty} | {_fmt_rating(rating_val)} | {lc_link} | {code_link} |\n"
 
     return table
 
