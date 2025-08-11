@@ -7,7 +7,7 @@ import urllib.request
 
 LEVEL_MAP = {
     'EASY': 'Easy',
-    'MEDIUM': 'Medium',
+    'MEDIUM': 'Med',
     'HARD': 'Hard'
 }
 
@@ -66,17 +66,12 @@ def _fmt_rating(x: float | None) -> str:
 
 # Generate the markdown table
 def generate_table():
-    # table = "## Completed Problem List\n\n"
-    # table += "| ID | Title | Difficulty | LeetCode | Code |\n"
-    # table += "|----|-------|------------|----------|------|\n"
     table = "## Completed Problem List\n\n"
-    table += "| ID | Title | Difficulty | Rating | LeetCode | Code |\n"
+    table += "| ID | Title | Diff | Rating | Link | Code |\n"
     table += "|----|-------|------------|--------|----------|------|\n"
-
 
     entries = []
     rmap = ratings_map()
-
 
     for folder in ['EASY', 'MEDIUM', 'HARD']:
         if not os.path.exists(folder):

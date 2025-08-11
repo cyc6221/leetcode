@@ -22,7 +22,7 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy | 24 |
-| Medium | 6 |
+| Med | 6 |
 | Hard | 1 |
 | **Total** | 31 |
 
@@ -35,7 +35,7 @@ This is a 30-day LeetCode challenge.
 
 [████████████████████████████████████████████████░░░░░░░░░░░░] 80%
 
-**Medium**: 6 / 20
+**Med**: 6 / 20
 
 [██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 30%
 
@@ -47,12 +47,12 @@ This is a 30-day LeetCode challenge.
 <!-- LEETCODE_TABLE_START -->
 ## Completed Problem List
 
-| ID | Title | Difficulty | Rating | LeetCode | Code |
+| ID | Title | Diff | Rating | Link | Code |
 |----|-------|------------|--------|----------|------|
-| 735 | Asteroid Collision | Medium | - | [Link](https://leetcode.com/problems/asteroid-collision/) | [View](./MEDIUM/735.asteroid-collision.cpp) |
+| 735 | Asteroid Collision | Med | - | [Link](https://leetcode.com/problems/asteroid-collision/) | [View](./MEDIUM/735.asteroid-collision.cpp) |
 | 3280 | Convert Date To Binary | Easy | 1205.7 | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | 1378.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
-| 3315 | Construct The Minimum Bitwise Array Ii | Medium | 1714.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
+| 3315 | Construct The Minimum Bitwise Array Ii | Med | 1714.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
 | 3407 | Substring Matching Pattern | Easy | 1472.7 | [Link](https://leetcode.com/problems/substring-matching-pattern/) | [View](./EASY/3407.substring-matching-pattern.cpp) |
 | 3411 | Maximum Subarray With Equal Products | Easy | 1443.2 | [Link](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | [View](./EASY/3411.maximum-subarray-with-equal-products.cpp) |
 | 3461 | Check If Digits Are Equal In String After Operations I | Easy | 1189.4 | [Link](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/) | [View](./EASY/3461.check-if-digits-are-equal-in-string-after-operations-i.cpp) |
@@ -76,9 +76,9 @@ This is a 30-day LeetCode challenge.
 | 3591 | Check If Any Element Has Prime Frequency | Easy | 1234.5 | [Link](https://leetcode.com/problems/check-if-any-element-has-prime-frequency/) | [View](./EASY/3591.check-if-any-element-has-prime-frequency.cpp) |
 | 3600 | Maximize Spanning Tree Stability With Upgrades | Hard | 2301.0 | [Link](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | [View](./HARD/3600.maximize-spanning-tree-stability-with-upgrades.cpp) |
 | 3602 | Hexadecimal And Hexatrigesimal Conversion | Easy | 1305.3 | [Link](https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion/) | [View](./EASY/3602.hexadecimal-and-hexatrigesimal-conversion.cpp) |
-| 3604 | Minimum Time To Reach Destination In Directed Graph | Medium | 1844.6 | [Link](https://leetcode.com/problems/minimum-time-to-reach-destination-in-directed-graph/) | [View](./MEDIUM/3604.minimum-time-to-reach-destination-in-directed-graph.cpp) |
-| 3608 | Minimum Time For K Connected Components | Medium | 1892.5 | [Link](https://leetcode.com/problems/minimum-time-for-k-connected-components/) | [View](./MEDIUM/3608.minimum-time-for-k-connected-components.cpp) |
-| 3612 | Process String With Special Operations I | Medium | 1186.0 | [Link](https://leetcode.com/problems/process-string-with-special-operations-i/) | [View](./MEDIUM/3612.process-string-with-special-operations-i.cpp) |
-| 3613 | Minimize Maximum Component Cost | Medium | 1641.5 | [Link](https://leetcode.com/problems/minimize-maximum-component-cost/) | [View](./MEDIUM/3613.minimize-maximum-component-cost.cpp) |
+| 3604 | Minimum Time To Reach Destination In Directed Graph | Med | 1844.6 | [Link](https://leetcode.com/problems/minimum-time-to-reach-destination-in-directed-graph/) | [View](./MEDIUM/3604.minimum-time-to-reach-destination-in-directed-graph.cpp) |
+| 3608 | Minimum Time For K Connected Components | Med | 1892.5 | [Link](https://leetcode.com/problems/minimum-time-for-k-connected-components/) | [View](./MEDIUM/3608.minimum-time-for-k-connected-components.cpp) |
+| 3612 | Process String With Special Operations I | Med | 1186.0 | [Link](https://leetcode.com/problems/process-string-with-special-operations-i/) | [View](./MEDIUM/3612.process-string-with-special-operations-i.cpp) |
+| 3613 | Minimize Maximum Component Cost | Med | 1641.5 | [Link](https://leetcode.com/problems/minimize-maximum-component-cost/) | [View](./MEDIUM/3613.minimize-maximum-component-cost.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
