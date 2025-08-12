@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy | 29 |
+| Easy | 30 |
 | Med | 6 |
 | Hard | 1 |
-| **Total** | 36 |
+| **Total** | 37 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy**: 29 / 30
+**Easy**: 30 / 30
 
-[██████████████████████████████████████████████████████████░░] 96%
+[████████████████████████████████████████████████████████████] 100%
 
 **Med**: 6 / 20
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3280 | Convert Date To Binary | Easy | 1205.7 | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | 1378.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Med | 1714.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
+| 3375 | Minimum Operations To Make Array Values Equal To K | Easy | 1382.8 | [Link](https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k/) | [View](./EASY/3375.minimum-operations-to-make-array-values-equal-to-k.cpp) |
 | 3379 | Transformed Array | Easy | 1256.6 | [Link](https://leetcode.com/problems/transformed-array/) | [View](./EASY/3379.transformed-array.cpp) |
 | 3386 | Button With Longest Push Time | Easy | 1255.5 | [Link](https://leetcode.com/problems/button-with-longest-push-time/) | [View](./EASY/3386.button-with-longest-push-time.cpp) |
 | 3392 | Count Subarrays Of Length Three With A Condition | Easy | 1200.7 | [Link](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | [View](./EASY/3392.count-subarrays-of-length-three-with-a-condition.cpp) |
