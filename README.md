@@ -23,8 +23,8 @@ This is a 30-day LeetCode challenge.
 |------------|-------|
 | Easy | 30 |
 | Med | 18 |
-| Hard | 1 |
-| **Total** | 49 |
+| Hard | 2 |
+| **Total** | 50 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -39,9 +39,9 @@ This is a 30-day LeetCode challenge.
 
 [██████████████████████████████████████████████████████░░░░░░] 90%
 
-**Hard**: 1 / 10
+**Hard**: 2 / 10
 
-[██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
+[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
 <!-- LEETCODE_PROGRESS_END -->
 
 <!-- LEETCODE_TABLE_START -->
@@ -58,6 +58,7 @@ This is a 30-day LeetCode challenge.
 | 1415 | The K Th Lexicographical String Of All Happy Strings Of Length N | Med | 1575.6 | [Link](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | [View](./MEDIUM/1415.the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.cpp) |
 | 1442 | Count Triplets That Can Form Two Arrays Of Equal Xor | Med | 1524.6 | [Link](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/) | [View](./MEDIUM/1442.count-triplets-that-can-form-two-arrays-of-equal-xor.cpp) |
 | 1829 | Maximum Xor For Each Query | Med | 1523.4 | [Link](https://leetcode.com/problems/maximum-xor-for-each-query/) | [View](./MEDIUM/1829.maximum-xor-for-each-query.cpp) |
+| 2014 | Longest Subsequence Repeated K Times | Hard | 2558.3 | [Link](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) | [View](./HARD/2014.longest-subsequence-repeated-k-times.cpp) |
 | 2044 | Count Number Of Maximum Bitwise Or Subsets | Med | 1567.7 | [Link](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | [View](./MEDIUM/2044.count-number-of-maximum-bitwise-or-subsets.cpp) |
 | 2178 | Maximum Split Of Positive Even Integers | Med | 1538.2 | [Link](https://leetcode.com/problems/maximum-split-of-positive-even-integers/) | [View](./MEDIUM/2178.maximum-split-of-positive-even-integers.cpp) |
 | 2305 | Fair Distribution Of Cookies | Med | 1886.7 | [Link](https://leetcode.com/problems/fair-distribution-of-cookies/) | [View](./MEDIUM/2305.fair-distribution-of-cookies.cpp) |
