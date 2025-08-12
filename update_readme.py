@@ -100,7 +100,7 @@ def _fmt_rating(x: float | None) -> str:
 def generate_table():
     table = "## Completed Problem List\n\n"
     table += "| ID | Title | Diff | Rating | Link | Code |\n"
-    table += "|----|-------|------------|--------|----------|------|\n"
+    table += "|:--:|-------|:----:|:------:|:----:|:----:|\n"
 
     entries = []
     rmap = ratings_map()
@@ -116,14 +116,7 @@ def generate_table():
                     difficulty = LEVEL_MAP[folder]
                     code_path = f"./{folder}/{file}"
                     lc_url = f"https://leetcode.com/problems/{kebab}/"
-
                     rating_val = rmap.get(pid)
-                    # if rating_val is not None:
-                    #     Rating = f"{rating_val} {rating_to_emoji(rating_val)}"
-                    # else:
-                    #     Rating = "-"
-
-
                     entries.append((pid, qid, title, difficulty, rating_val, lc_url, code_path))
 
     # Sort by numeric ID

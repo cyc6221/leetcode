@@ -48,7 +48,7 @@ This is a 30-day LeetCode challenge.
 ## Completed Problem List
 
 | ID | Title | Diff | Rating | Link | Code |
-|----|-------|------------|--------|----------|------|
+|:--:|-------|:----:|:------:|:----:|:----:|
 | 78 | Subsets | Med 🟡 | - | [Link](https://leetcode.com/problems/subsets/) | [View](./MEDIUM/78.subsets.cpp) |
 | 90 | Subsets Ii | Med 🟡 | - | [Link](https://leetcode.com/problems/subsets-ii/) | [View](./MEDIUM/90.subsets-ii.cpp) |
 | 735 | Asteroid Collision | Med 🟡 | - | [Link](https://leetcode.com/problems/asteroid-collision/) | [View](./MEDIUM/735.asteroid-collision.cpp) |
