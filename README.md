@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy | 30 |
-| Med | 7 |
+| Med | 8 |
 | Hard | 1 |
-| **Total** | 38 |
+| **Total** | 39 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████████████████████████████████████████████████████] 100%
 
-**Med**: 7 / 20
+**Med**: 8 / 20
 
-[█████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 35%
+[████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 40%
 
 **Hard**: 1 / 10
 
@@ -51,6 +51,7 @@ This is a 30-day LeetCode challenge.
 |----|-------|------------|--------|----------|------|
 | 735 | Asteroid Collision | Med | - | [Link](https://leetcode.com/problems/asteroid-collision/) | [View](./MEDIUM/735.asteroid-collision.cpp) |
 | 2044 | Count Number Of Maximum Bitwise Or Subsets | Med | 1567.7 | [Link](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | [View](./MEDIUM/2044.count-number-of-maximum-bitwise-or-subsets.cpp) |
+| 2997 | Minimum Number Of Operations To Make Array Xor Equal To K | Med | 1524.6 | [Link](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/) | [View](./MEDIUM/2997.minimum-number-of-operations-to-make-array-xor-equal-to-k.cpp) |
 | 3280 | Convert Date To Binary | Easy | 1205.7 | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | 1378.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Med | 1714.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
