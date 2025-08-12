@@ -6,9 +6,9 @@ import io
 import urllib.request
 
 LEVEL_MAP = {
-    'EASY': 'Easy',
-    'MEDIUM': 'Med',
-    'HARD': 'Hard'
+    'EASY': 'Easy 🟢',
+    'MEDIUM': 'Med 🟡',
+    'HARD': 'Hard 🔴'
 }
 
 # Extract ID and kebab-case title
@@ -61,10 +61,38 @@ def ratings_map() -> dict[int, float]:
         _RATINGS_CACHE = get_ratings_map()
     return _RATINGS_CACHE
 
+def rating_to_emoji(rating):
+    if rating >= 4000:
+        return "⚫🔴"
+    elif rating >= 3000:
+        return "🔴⚫"
+    elif rating >= 2600:
+        return "🔴🔴"
+    elif rating >= 2400:
+        return "🔴"
+    elif rating >= 2300:
+        return "🟠🟠"
+    elif rating >= 2100:
+        return "🟠"
+    elif rating >= 1900:
+        return "🟣"
+    elif rating >= 1600:
+        return "🔵"
+    elif rating >= 1400:
+        return "🔷" 
+    elif rating >= 1200:
+        return "🟢"
+    else:
+        return "⚪"
+
 def _fmt_rating(x: float | None) -> str:
     if x is None:
         return "-"
-    return str(int(x)) if abs(x - int(x)) < 1e-9 else f"{x:.1f}"
+    emoji = rating_to_emoji(x)
+    if abs(x - int(x)) < 1e-9:
+        return f"{int(x)}{emoji}"
+    else:
+        return f"{x:.1f}{emoji}"
 
 ##################################################################
 
@@ -88,7 +116,14 @@ def generate_table():
                     difficulty = LEVEL_MAP[folder]
                     code_path = f"./{folder}/{file}"
                     lc_url = f"https://leetcode.com/problems/{kebab}/"
+
                     rating_val = rmap.get(pid)
+                    # if rating_val is not None:
+                    #     Rating = f"{rating_val} {rating_to_emoji(rating_val)}"
+                    # else:
+                    #     Rating = "-"
+
+
                     entries.append((pid, qid, title, difficulty, rating_val, lc_url, code_path))
 
     # Sort by numeric ID
