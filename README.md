@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy | 30 |
-| Med | 6 |
+| Med | 7 |
 | Hard | 1 |
-| **Total** | 37 |
+| **Total** | 38 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████████████████████████████████████████████████████] 100%
 
-**Med**: 6 / 20
+**Med**: 7 / 20
 
-[██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 30%
+[█████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 35%
 
 **Hard**: 1 / 10
 
@@ -50,6 +50,7 @@ This is a 30-day LeetCode challenge.
 | ID | Title | Diff | Rating | Link | Code |
 |----|-------|------------|--------|----------|------|
 | 735 | Asteroid Collision | Med | - | [Link](https://leetcode.com/problems/asteroid-collision/) | [View](./MEDIUM/735.asteroid-collision.cpp) |
+| 2044 | Count Number Of Maximum Bitwise Or Subsets | Med | 1567.7 | [Link](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | [View](./MEDIUM/2044.count-number-of-maximum-bitwise-or-subsets.cpp) |
 | 3280 | Convert Date To Binary | Easy | 1205.7 | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy | 1378.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
 | 3315 | Construct The Minimum Bitwise Array Ii | Med | 1714.7 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | [View](./MEDIUM/3315.construct-the-minimum-bitwise-array-ii.cpp) |
