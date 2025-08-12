@@ -90,9 +90,9 @@ def _fmt_rating(x: float | None) -> str:
         return "-"
     emoji = rating_to_emoji(x)
     if abs(x - int(x)) < 1e-9:
-        return f"{int(x)}{emoji}"
+        return f"{int(x)}\n{emoji}"
     else:
-        return f"{x:.1f}{emoji}"
+        return f"{x:.1f}\n{emoji}"
 
 ##################################################################
 
