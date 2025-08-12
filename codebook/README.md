@@ -1,6 +1,7 @@
 # Codebook Index
 
 ## DS/
+- [BST.cpp](./DS/BST.cpp)
 - [UnionFind.cpp](./DS/UnionFind.cpp)
 
 ## math/
