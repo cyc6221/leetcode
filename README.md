@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy | 30 |
-| Med | 11 |
+| Med | 12 |
 | Hard | 1 |
-| **Total** | 42 |
+| **Total** | 43 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████████████████████████████████████████████████████] 100%
 
-**Med**: 11 / 20
+**Med**: 12 / 20
 
-[█████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░] 55%
+[████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░] 60%
 
 **Hard**: 1 / 10
 
@@ -50,6 +50,7 @@ This is a 30-day LeetCode challenge.
 | ID | Title | Diff | Rating | Link | Code |
 |----|-------|------------|--------|----------|------|
 | 735 | Asteroid Collision | Med | - | [Link](https://leetcode.com/problems/asteroid-collision/) | [View](./MEDIUM/735.asteroid-collision.cpp) |
+| 1382 | Balance A Binary Search Tree | Med | 1540.6 | [Link](https://leetcode.com/problems/balance-a-binary-search-tree/) | [View](./MEDIUM/1382.balance-a-binary-search-tree.cpp) |
 | 1415 | The K Th Lexicographical String Of All Happy Strings Of Length N | Med | 1575.6 | [Link](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | [View](./MEDIUM/1415.the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.cpp) |
 | 1442 | Count Triplets That Can Form Two Arrays Of Equal Xor | Med | 1524.6 | [Link](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/) | [View](./MEDIUM/1442.count-triplets-that-can-form-two-arrays-of-equal-xor.cpp) |
 | 1829 | Maximum Xor For Each Query | Med | 1523.4 | [Link](https://leetcode.com/problems/maximum-xor-for-each-query/) | [View](./MEDIUM/1829.maximum-xor-for-each-query.cpp) |
