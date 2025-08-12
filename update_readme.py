@@ -6,9 +6,9 @@ import io
 import urllib.request
 
 LEVEL_MAP = {
-    'EASY': 'Easy  🟢',
-    'MEDIUM': 'Med  🟡',
-    'HARD': 'Hard  🔴'
+    'EASY': 'Easy🟢',
+    'MEDIUM': 'Med🟡',
+    'HARD': 'Hard🔴'
 }
 
 # Extract ID and kebab-case title
