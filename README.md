@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy | 30 |
-| Med | 8 |
+| Med | 9 |
 | Hard | 1 |
-| **Total** | 39 |
+| **Total** | 40 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████████████████████████████████████████████████████] 100%
 
-**Med**: 8 / 20
+**Med**: 9 / 20
 
-[████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 40%
+[███████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 45%
 
 **Hard**: 1 / 10
 
@@ -50,6 +50,7 @@ This is a 30-day LeetCode challenge.
 | ID | Title | Diff | Rating | Link | Code |
 |----|-------|------------|--------|----------|------|
 | 735 | Asteroid Collision | Med | - | [Link](https://leetcode.com/problems/asteroid-collision/) | [View](./MEDIUM/735.asteroid-collision.cpp) |
+| 1415 | The K Th Lexicographical String Of All Happy Strings Of Length N | Med | 1575.6 | [Link](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | [View](./MEDIUM/1415.the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.cpp) |
 | 2044 | Count Number Of Maximum Bitwise Or Subsets | Med | 1567.7 | [Link](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | [View](./MEDIUM/2044.count-number-of-maximum-bitwise-or-subsets.cpp) |
 | 2997 | Minimum Number Of Operations To Make Array Xor Equal To K | Med | 1524.6 | [Link](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/) | [View](./MEDIUM/2997.minimum-number-of-operations-to-make-array-xor-equal-to-k.cpp) |
 | 3280 | Convert Date To Binary | Easy | 1205.7 | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
