@@ -5,13 +5,8 @@
  *
  * https://leetcode.com/problems/subsets-ii/description/
  *
- * algorithms
- * Medium (59.70%)
- * Likes:    10503
- * Dislikes: 381
- * Total Accepted:    1.3M
- * Total Submissions: 2.1M
- * Testcase Example:  '[1,2,2]'
+ * Category: algorithms
+ * Difficulty: Medium
  *
  * Given an integer array nums that may contain duplicates, return all possible
  * subsets (the power set).
