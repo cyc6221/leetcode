@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy🟢 | 30 |
-| Med🟡 | 18 |
+| Med🟡 | 19 |
 | Hard🔴 | 2 |
-| **Total** | 50 |
+| **Total** | 51 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████████████████████████████████████████████████████] 100%
 
-**Med🟡**: 18 / 20
+**Med🟡**: 19 / 20
 
-[██████████████████████████████████████████████████████░░░░░░] 90%
+[█████████████████████████████████████████████████████████░░░] 95%
 
 **Hard🔴**: 2 / 10
 
@@ -62,6 +62,7 @@ This is a 30-day LeetCode challenge.
 | 2044 | Count Number Of Maximum Bitwise Or Subsets | Med🟡 | 1567.7<br>🔷 | [Link](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | [View](./MEDIUM/2044.count-number-of-maximum-bitwise-or-subsets.cpp) |
 | 2178 | Maximum Split Of Positive Even Integers | Med🟡 | 1538.2<br>🔷 | [Link](https://leetcode.com/problems/maximum-split-of-positive-even-integers/) | [View](./MEDIUM/2178.maximum-split-of-positive-even-integers.cpp) |
 | 2305 | Fair Distribution Of Cookies | Med🟡 | 1886.7<br>🔵 | [Link](https://leetcode.com/problems/fair-distribution-of-cookies/) | [View](./MEDIUM/2305.fair-distribution-of-cookies.cpp) |
+| 2698 | Find The Punishment Number Of An Integer | Med🟡 | 1678.6<br>🔵 | [Link](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | [View](./MEDIUM/2698.find-the-punishment-number-of-an-integer.cpp) |
 | 2997 | Minimum Number Of Operations To Make Array Xor Equal To K | Med🟡 | 1524.6<br>🔷 | [Link](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/) | [View](./MEDIUM/2997.minimum-number-of-operations-to-make-array-xor-equal-to-k.cpp) |
 | 3280 | Convert Date To Binary | Easy🟢 | 1205.7<br>🟢 | [Link](https://leetcode.com/problems/convert-date-to-binary/) | [View](./EASY/3280.convert-date-to-binary.cpp) |
 | 3314 | Construct The Minimum Bitwise Array I | Easy🟢 | 1378.7<br>🟢 | [Link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | [View](./EASY/3314.construct-the-minimum-bitwise-array-i.cpp) |
