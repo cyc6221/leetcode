@@ -139,14 +139,15 @@ def generate_table(goal: str) -> str:
     return table
 
 def generate_summary_table(goal: str) -> str:
+    base_path = os.path.join(GOALS_DIR, goal)
     summary = {"EASY": 0, "MEDIUM": 0, "HARD": 0}
     total = 0
 
     for folder in summary:
-        path = folder
-        if not os.path.exists(path):
+        folder_path = os.path.join(base_path, folder)
+        if not os.path.exists(folder_path):
             continue
-        for file in os.listdir(path):
+        for file in os.listdir(folder_path):
             if file.endswith(".cpp"):
                 summary[folder] += 1
                 total += 1
@@ -172,11 +173,12 @@ def progress_bar(percentage, width=60):
     return "[" + "█" * filled + "░" * (width - filled) + f"] {int(percentage * 100)}%"
 
 def generate_progress_block(goal: str) -> str:
+    base_path = os.path.join(GOALS_DIR, goal)
     counts = {"EASY": 0, "MEDIUM": 0, "HARD": 0}
     for level in counts:
-        path = level
-        if os.path.exists(path):
-            for file in os.listdir(path):
+        folder_path = os.path.join(base_path, level)
+        if os.path.exists(folder_path):
+            for file in os.listdir(folder_path):
                 if file.endswith(".cpp"):
                     counts[level] += 1
 
@@ -279,12 +281,14 @@ def find_latest_goal(goals_dir: str = GOAL_DIR) -> str:
 
 # === 替換區塊 ===
 def replace_block(content: str, start_tag: str, end_tag: str, new_block: str) -> str:
+    pattern = f"{re.escape(start_tag)}.*?{re.escape(end_tag)}"
     return re.sub(
-        f"{re.escape(start_tag)}.*?{re.escape(end_tag)}",
-        f"{start_tag}\n{new_block}\n{end_tag}",
+        pattern,
+        lambda m: f"{start_tag}\n{new_block}\n{end_tag}",
         content,
         flags=re.DOTALL
     )
+
 
 # === 找最新 goal ===
 def find_latest_goal() -> str:

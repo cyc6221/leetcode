@@ -12,8 +12,8 @@ This is a 30-day LeetCode challenge.
 
 - **Duration**: 2025-08-14 to 2025-09-12
 - **Goal**:
-  - Solve **25 Easy** problems
-  - Solve **25 Medium** problems
+  - Solve **30 Easy** problems
+  - Solve **20 Medium** problems
   - Solve **10 Hard** problems
 
 <!-- LEETCODE_SUMMARY_START -->
@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 0 |
+| Easy🟢 | 1 |
 | Med🟡 | 0 |
 | Hard🔴 | 0 |
-| **Total** | 0 |
+| **Total** | 1 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 0 / 30
+**Easy🟢**: 1 / 30
 
-[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%
+[██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 3%
 
 **Med🟡**: 0 / 20
 
@@ -49,6 +49,7 @@ This is a 30-day LeetCode challenge.
 
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
+| 3633 | Earliest Finish Time For Land And Water Rides I | Easy🟢 | 1342.7<br>🟢 | [Link](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | [View](./C:\Users\LENOVO\Desktop\leetcode\goals\goal2\EASY/3633.earliest-finish-time-for-land-and-water-rides-i.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
 
