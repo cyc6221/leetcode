@@ -102,6 +102,9 @@ def _fmt_rating(x: float | None) -> str:
 
 ##################################################################
 
+from pathlib import Path
+REPO_ROOT = Path(__file__).resolve().parents[1]  # repo 根目錄（scripts 的上一層）
+
 # Generate the markdown table
 def generate_table(goal: str) -> str:
     base_path = os.path.join(GOALS_DIR, goal)
@@ -123,7 +126,10 @@ def generate_table(goal: str) -> str:
                 if qid:
                     pid = int(qid)
                     difficulty = LEVEL_MAP[folder]
-                    code_path = f"./{folder_path}/{file}"
+                    # code_path = f"./{folder_path}/{file}"
+                    p = Path(folder_path) / file
+                    rel = Path(os.path.relpath(p.resolve(), REPO_ROOT))
+                    code_path = "./" + rel.as_posix()   # 例如 ./goals/goal2/EASY/xxx.cpp
                     lc_url = f"https://leetcode.com/problems/{kebab}/"
                     rating_val = rmap.get(pid)
                     entries.append((pid, qid, title, difficulty, rating_val, lc_url, code_path))

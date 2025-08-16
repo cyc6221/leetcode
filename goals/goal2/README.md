@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy🟢 | 1 |
-| Med🟡 | 0 |
+| Med🟡 | 1 |
 | Hard🔴 | 0 |
-| **Total** | 1 |
+| **Total** | 2 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 3%
 
-**Med🟡**: 0 / 20
+**Med🟡**: 1 / 20
 
-[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%
+[███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 5%
 
 **Hard🔴**: 0 / 10
 
@@ -50,6 +50,7 @@ This is a 30-day LeetCode challenge.
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
 | 3633 | Earliest Finish Time For Land And Water Rides I | Easy🟢 | 1342.7<br>🟢 | [Link](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | [View](./goals/goal2/EASY/3633.earliest-finish-time-for-land-and-water-rides-i.cpp) |
+| 3634 | Minimum Removals To Balance Array | Med🟡 | 1453.1<br>🔷 | [Link](https://leetcode.com/problems/minimum-removals-to-balance-array/) | [View](./goals/goal2/MEDIUM/3634.minimum-removals-to-balance-array.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
 
