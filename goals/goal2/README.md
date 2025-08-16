@@ -49,7 +49,7 @@ This is a 30-day LeetCode challenge.
 
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
-| 3633 | Earliest Finish Time For Land And Water Rides I | Easy🟢 | 1342.7<br>🟢 | [Link](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | [View](./C:\Users\LENOVO\Desktop\leetcode\goals\goal2\EASY/3633.earliest-finish-time-for-land-and-water-rides-i.cpp) |
+| 3633 | Earliest Finish Time For Land And Water Rides I | Easy🟢 | 1342.7<br>🟢 | [Link](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | [View](./goals/goal2/EASY/3633.earliest-finish-time-for-land-and-water-rides-i.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
 
