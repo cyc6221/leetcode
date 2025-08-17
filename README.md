@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 1 |
+| Easy🟢 | 2 |
 | Med🟡 | 1 |
 | Hard🔴 | 0 |
-| **Total** | 2 |
+| **Total** | 3 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 1 / 30
+**Easy🟢**: 2 / 30
 
-[██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 3%
+[████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 6%
 
 **Med🟡**: 1 / 20
 
@@ -49,6 +49,7 @@ This is a 30-day LeetCode challenge.
 
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
+| 3370 | Smallest Number With All Set Bits | Easy🟢 | 1198.6<br>⚪ | [Link](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [View](./goals/goal2/EASY/3370.smallest-number-with-all-set-bits.cpp) |
 | 3633 | Earliest Finish Time For Land And Water Rides I | Easy🟢 | 1342.7<br>🟢 | [Link](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | [View](./goals/goal2/EASY/3633.earliest-finish-time-for-land-and-water-rides-i.cpp) |
 | 3634 | Minimum Removals To Balance Array | Med🟡 | 1453.1<br>🔷 | [Link](https://leetcode.com/problems/minimum-removals-to-balance-array/) | [View](./goals/goal2/MEDIUM/3634.minimum-removals-to-balance-array.cpp) |
 
