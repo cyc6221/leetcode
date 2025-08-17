@@ -16,3 +16,6 @@ build
 # LeetCode 擴充功能的暫存資料夾（如果有）
 .leetcode/
 
+__pycache__/
+*.pyc
+*.pyo
