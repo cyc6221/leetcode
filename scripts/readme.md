@@ -5,6 +5,7 @@ This project includes Python scripts to maintain and update README files.
 ## Commands
 
 ### Update a single goal README
+
 Updates the `goals/<goal>/README.md` blocks (Progress / Summary / Table).
 
 ```bash
