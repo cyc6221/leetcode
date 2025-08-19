@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy🟢 | 4 |
-| Med🟡 | 1 |
+| Med🟡 | 2 |
 | Hard🔴 | 0 |
-| **Total** | 5 |
+| **Total** | 6 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 13%
 
-**Med🟡**: 1 / 20
+**Med🟡**: 2 / 20
 
-[███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 5%
+[██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
 
 **Hard🔴**: 0 / 10
 
@@ -49,6 +49,7 @@ This is a 30-day LeetCode challenge.
 
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
+| 1140 | Stone Game Ii | Med🟡 | 2035.0<br>🟣 | [Link](https://leetcode.com/problems/stone-game-ii/) | [View](./goals/goal2/MEDIUM/1140.stone-game-ii.cpp) |
 | 3360 | Stone Removal Game | Easy🟢 | 1267.5<br>🟢 | [Link](https://leetcode.com/problems/stone-removal-game/) | [View](./goals/goal2/EASY/3360.stone-removal-game.cpp) |
 | 3364 | Minimum Positive Sum Subarray | Easy🟢 | 1300.6<br>🟢 | [Link](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [View](./goals/goal2/EASY/3364.minimum-positive-sum-subarray.cpp) |
 | 3370 | Smallest Number With All Set Bits | Easy🟢 | 1198.6<br>⚪ | [Link](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [View](./goals/goal2/EASY/3370.smallest-number-with-all-set-bits.cpp) |
