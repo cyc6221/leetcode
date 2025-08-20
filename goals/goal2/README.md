@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy🟢 | 4 |
-| Med🟡 | 2 |
+| Med🟡 | 3 |
 | Hard🔴 | 0 |
-| **Total** | 6 |
+| **Total** | 7 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 13%
 
-**Med🟡**: 2 / 20
+**Med🟡**: 3 / 20
 
-[██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
+[█████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 15%
 
 **Hard🔴**: 0 / 10
 
@@ -50,6 +50,7 @@ This is a 30-day LeetCode challenge.
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
 | 1140 | Stone Game Ii | Med🟡 | 2035.0<br>🟣 | [Link](https://leetcode.com/problems/stone-game-ii/) | [View](./goals/goal2/MEDIUM/1140.stone-game-ii.cpp) |
+| 1749 | Maximum Absolute Sum Of Any Subarray | Med🟡 | 1541.6<br>🔷 | [Link](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [View](./goals/goal2/MEDIUM/1749.maximum-absolute-sum-of-any-subarray.cpp) |
 | 3360 | Stone Removal Game | Easy🟢 | 1267.5<br>🟢 | [Link](https://leetcode.com/problems/stone-removal-game/) | [View](./goals/goal2/EASY/3360.stone-removal-game.cpp) |
 | 3364 | Minimum Positive Sum Subarray | Easy🟢 | 1300.6<br>🟢 | [Link](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [View](./goals/goal2/EASY/3364.minimum-positive-sum-subarray.cpp) |
 | 3370 | Smallest Number With All Set Bits | Easy🟢 | 1198.6<br>⚪ | [Link](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [View](./goals/goal2/EASY/3370.smallest-number-with-all-set-bits.cpp) |
