@@ -12,4 +12,6 @@
 |:-------:|:--------:|:------:|:---------:|
 | biweekly163 | [Link](https://leetcode.com/contest/biweekly-contest-163/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly163) | 4 |
 
+## Note
+
 **Total C++ files tracked:** 8

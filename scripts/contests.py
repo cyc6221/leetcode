@@ -76,6 +76,7 @@ def update_index_readme(contest_root: Path):
             md.append(f"| {d.name} | {lc_link} | {gh_link} | {cnt} |")
         md.append("")
 
+    md.append(f"## Note\n")
     md.append(f"**Total C++ files tracked:** {total_cnt}\n")
     (contest_root / "README.md").write_text("\n".join(md), encoding="utf-8")
     return total_cnt
@@ -112,7 +113,6 @@ def update_all_contests():
             # 沒有 README.md 直接新建
             skeleton = (
                 f"# {contest}\n\n"
-                f"## Problems (C++)\n\n"
                 f"<!-- LEETCODE_TABLE_START -->\n"
                 f"{table}\n"
                 f"<!-- LEETCODE_TABLE_END -->\n"

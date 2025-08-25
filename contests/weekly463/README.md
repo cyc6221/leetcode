@@ -1,7 +1,5 @@
 # weekly463
 
-## Problems (C++)
-
 <!-- LEETCODE_TABLE_START -->
 ## Problem List
 
