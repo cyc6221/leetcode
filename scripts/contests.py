@@ -59,20 +59,21 @@ def update_index_readme(contest_root: Path):
             continue
         md.append(f"## {grp.capitalize()}\n")
         md.append("| Contest | LeetCode | GitHub | C++ Files |")
-        md.append("|---------|----------|--------|-----------|")
+        md.append("|:-------:|:--------:|:------:|:---------:|")
         for d in contests:
             cnt = _count_cpp_files(d)
             total_cnt += cnt
 
             # 相對於 contest/ 的資料夾連結（原本的本地連結）
-            rel = "./" + d.as_posix()
+            # rel = "./" + d.as_posix()
 
             # 產生 LeetCode & GitHub 連結
             lc_url, gh_url = _contest_link_pair(d.name)
             lc_link = f"[Link]({lc_url})" if lc_url else ""
             gh_link = f"[Repo]({gh_url})" if gh_url else f"[Repo]({GITHUB_CONTESTS_BASE}/{d.name})"
 
-            md.append(f"| [{d.name}]({rel}) | {lc_link} | {gh_link} | {cnt} |")
+            # md.append(f"| [{d.name}]({rel}) | {lc_link} | {gh_link} | {cnt} |")
+            md.append(f"| {d.name} | {lc_link} | {gh_link} | {cnt} |")
         md.append("")
 
     md.append(f"**Total C++ files tracked:** {total_cnt}\n")
