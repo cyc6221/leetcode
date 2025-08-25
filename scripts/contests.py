@@ -1,7 +1,8 @@
 import os
+import re
 from pathlib import Path
 
-from .paths import CONTESTS_DIR
+from .paths import CONTESTS_DIR, GITHUB_CONTESTS_BASE
 from .generator import generate_table_contest
 from .blocks import replace_block
 
@@ -34,10 +35,20 @@ def _list_contests(contest_root: Path):
     return contests
 
 
+def _contest_link_pair(dir_name: str):
+    name = dir_name.lower()
+    m = re.match(r'^(weekly|biweekly)\D*?(\d+)$', name)
+    if not m:
+        return None, None
+    grp, num = m.group(1), m.group(2)
+    if grp == "weekly":
+        lc = f"https://leetcode.com/contest/weekly-contest-{num}/"
+    else:
+        lc = f"https://leetcode.com/contest/biweekly-contest-{num}/"
+    gh = f"{GITHUB_CONTESTS_BASE}/{dir_name}"
+    return lc, gh
+
 def update_index_readme(contest_root: Path):
-    """
-    在 contest/ 下建立/更新總索引 README.md
-    """
     groups = _list_contests(contest_root)
     md = ["# LeetCode Contests (C++)\n"]
     total_cnt = 0
@@ -47,13 +58,21 @@ def update_index_readme(contest_root: Path):
         if not contests:
             continue
         md.append(f"## {grp.capitalize()}\n")
-        md.append("| Contest | C++ Files |")
-        md.append("|---------|-----------|")
+        md.append("| Contest | LeetCode | GitHub | C++ Files |")
+        md.append("|---------|----------|--------|-----------|")
         for d in contests:
             cnt = _count_cpp_files(d)
             total_cnt += cnt
+
+            # 相對於 contest/ 的資料夾連結（原本的本地連結）
             rel = "./" + d.as_posix()
-            md.append(f"| [{d.name}]({rel}) | {cnt} |")
+
+            # 產生 LeetCode & GitHub 連結
+            lc_url, gh_url = _contest_link_pair(d.name)
+            lc_link = f"[Link]({lc_url})" if lc_url else ""
+            gh_link = f"[Repo]({gh_url})" if gh_url else f"[Repo]({GITHUB_CONTESTS_BASE}/{d.name})"
+
+            md.append(f"| [{d.name}]({rel}) | {lc_link} | {gh_link} | {cnt} |")
         md.append("")
 
     md.append(f"**Total C++ files tracked:** {total_cnt}\n")

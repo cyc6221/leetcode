@@ -14,3 +14,6 @@ CONTESTS_DIR = os.path.join(ROOT_DIR, "contests")
 CONTEST_PATTERN = re.compile(r"^contest(\d+)$")
 # 
 # CONTEST_PATTERN = re.compile(r"^contest(\d+)$"
+
+
+GITHUB_CONTESTS_BASE = "https://github.com/cyc6221/leetcode/tree/main/contests"
