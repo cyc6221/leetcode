@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy🟢 | 5 |
-| Med🟡 | 3 |
+| Med🟡 | 4 |
 | Hard🔴 | 0 |
-| **Total** | 8 |
+| **Total** | 9 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 16%
 
-**Med🟡**: 3 / 20
+**Med🟡**: 4 / 20
 
-[█████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 15%
+[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
 
 **Hard🔴**: 0 / 10
 
@@ -49,6 +49,7 @@ This is a 30-day LeetCode challenge.
 
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
+| 950 | Reveal Cards In Increasing Order | Med🟡 | 1686.4<br>🔵 | [Link](https://leetcode.com/problems/reveal-cards-in-increasing-order/) | [View](./goals/goal2/MEDIUM/950.reveal-cards-in-increasing-order.cpp) |
 | 1140 | Stone Game Ii | Med🟡 | 2035.0<br>🟣 | [Link](https://leetcode.com/problems/stone-game-ii/) | [View](./goals/goal2/MEDIUM/1140.stone-game-ii.cpp) |
 | 1749 | Maximum Absolute Sum Of Any Subarray | Med🟡 | 1541.6<br>🔷 | [Link](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [View](./goals/goal2/MEDIUM/1749.maximum-absolute-sum-of-any-subarray.cpp) |
 | 2824 | Count Pairs Whose Sum Is Less Than Target | Easy🟢 | 1165.9<br>⚪ | [Link](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | [View](./goals/goal2/EASY/2824.count-pairs-whose-sum-is-less-than-target.cpp) |
