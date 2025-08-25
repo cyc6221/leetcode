@@ -1,7 +1,7 @@
 import os
 import re
 from pathlib import Path
-from .paths import GOALS_DIR
+from .paths import GOALS_DIR, CONTEST_DIR
 from .ratings import ratings_map, _fmt_rating
 
 REPO_ROOT = Path(__file__).resolve().parents[1]  # repo 根目錄（scripts 的上一層）
@@ -110,3 +110,39 @@ def generate_progress_block(goal: str) -> str:
         bar = progress_bar(pct)
         block += f"**{LEVEL_MAP[level]}**: {done} / {total}\n\n{bar}\n\n"
     return block.strip()
+
+
+### === CONTESTS === ###
+
+def generate_table_contest(contest: str) -> str:
+    contest_path = os.path.join(CONTEST_DIR, contest)
+
+    table = "## Problem List\n\n"
+    table += "| ID | Title | Rating | Link | Code |\n"
+    table += "|:--:|-------|:------:|:----:|:----:|\n"
+
+    entries = []
+    rmap = ratings_map()
+
+    for file in os.listdir(contest_path):
+        if file.endswith(".cpp"):
+            qid, title, kebab = extract_info(file)
+            if qid:
+                pid = int(qid)
+                # code_path = f"./{folder_path}/{file}"
+                p = Path(contest_path) / file
+                rel = Path(os.path.relpath(p.resolve(), REPO_ROOT))
+                code_path = "./" + rel.as_posix() 
+                lc_url = f"https://leetcode.com/problems/{kebab}/"
+                rating_val = rmap.get(pid)
+                entries.append((pid, qid, title, rating_val, lc_url, code_path))
+
+    # Sort by numeric ID
+    entries.sort()
+
+    for _, qid, title, rating_val, lc_url, code_path in entries:
+        code_link = f"[View]({code_path})"
+        lc_link = f"[Link]({lc_url})"
+        table += f"| {qid} | {title} | {_fmt_rating(rating_val)} | {lc_link} | {code_link} |\n"
+
+    return table

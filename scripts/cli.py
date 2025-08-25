@@ -1,5 +1,6 @@
 import argparse
 from .goals import find_latest_goal, update_goal_readme, sync_root_readme, update_and_sync_latest
+from .contests import update_all_contests
 
 
 def main():
@@ -17,6 +18,7 @@ def main():
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
+    ### === Goal === ###
     # update
     p_update = subparsers.add_parser(
         "update",
@@ -45,6 +47,27 @@ def main():
         help="Update the latest goal README and sync it to the root README.md.",
     )
 
+    ### === Contest === ###
+    subparsers.add_parser(
+        "update-contests",
+        help="Update all contest READMEs and index",
+    )
+    # p_uc = subparsers.add_parser(
+    #     "update-contests", 
+    #     help="Update all contest READMEs and index"
+    # )
+    # p_uc.add_argument(
+    #     "--repo-root", 
+    #     default=".", 
+    #     help="Repo root (default: .)"
+    # )
+    # p_uc.add_argument(
+    #     "--contest-rel", 
+    #     default="contests", 
+    #     help="Contest folder relative to repo root"
+    # )
+
+
     args = parser.parse_args()
 
     if args.command == "update":
@@ -57,6 +80,15 @@ def main():
 
     elif args.command == "all":
         update_and_sync_latest()
+
+    elif args.command == "update-contests":
+        update_all_contests()
+        # res = update_all_contests(repo_root=args.repo_root, contest_rel=args.contest_rel)
+        # for path, n in res["updated_contests"]:
+        #     print(f"[contest] {path} -> {n} C++ files")
+        # print(f"[contest] total C++ files tracked: {res['total_problems']}")
+
+
 
 
 if __name__ == "__main__":
