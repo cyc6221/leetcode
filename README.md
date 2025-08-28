@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 7 |
+| Easy🟢 | 8 |
 | Med🟡 | 4 |
 | Hard🔴 | 0 |
-| **Total** | 11 |
+| **Total** | 12 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 7 / 30
+**Easy🟢**: 8 / 30
 
-[██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 23%
+[████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 26%
 
 **Med🟡**: 4 / 20
 
@@ -55,6 +55,7 @@ This is a 30-day LeetCode challenge.
 | 1749 | Maximum Absolute Sum Of Any Subarray | Med🟡 | 1541.6<br>🔷 | [Link](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [View](./goals/goal2/MEDIUM/1749.maximum-absolute-sum-of-any-subarray.cpp) |
 | 2815 | Max Pair Sum In An Array | Easy🟢 | 1295.1<br>🟢 | [Link](https://leetcode.com/problems/max-pair-sum-in-an-array/) | [View](./goals/goal2/EASY/2815.max-pair-sum-in-an-array.cpp) |
 | 2824 | Count Pairs Whose Sum Is Less Than Target | Easy🟢 | 1165.9<br>⚪ | [Link](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | [View](./goals/goal2/EASY/2824.count-pairs-whose-sum-is-less-than-target.cpp) |
+| 2828 | Check If A String Is An Acronym Of Words | Easy🟢 | 1152.0<br>⚪ | [Link](https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/) | [View](./goals/goal2/EASY/2828.check-if-a-string-is-an-acronym-of-words.cpp) |
 | 3360 | Stone Removal Game | Easy🟢 | 1267.5<br>🟢 | [Link](https://leetcode.com/problems/stone-removal-game/) | [View](./goals/goal2/EASY/3360.stone-removal-game.cpp) |
 | 3364 | Minimum Positive Sum Subarray | Easy🟢 | 1300.6<br>🟢 | [Link](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [View](./goals/goal2/EASY/3364.minimum-positive-sum-subarray.cpp) |
 | 3370 | Smallest Number With All Set Bits | Easy🟢 | 1198.6<br>⚪ | [Link](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [View](./goals/goal2/EASY/3370.smallest-number-with-all-set-bits.cpp) |
