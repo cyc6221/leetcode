@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 6 |
+| Easy🟢 | 7 |
 | Med🟡 | 4 |
 | Hard🔴 | 0 |
-| **Total** | 10 |
+| **Total** | 11 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 6 / 30
+**Easy🟢**: 7 / 30
 
-[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
+[██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 23%
 
 **Med🟡**: 4 / 20
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 1140 | Stone Game Ii | Med🟡 | 2035.0<br>🟣 | [Link](https://leetcode.com/problems/stone-game-ii/) | [View](./goals/goal2/MEDIUM/1140.stone-game-ii.cpp) |
 | 1185 | Day Of The Week | Easy🟢 | 1382.5<br>🟢 | [Link](https://leetcode.com/problems/day-of-the-week/) | [View](./goals/goal2/EASY/1185.day-of-the-week.cpp) |
 | 1749 | Maximum Absolute Sum Of Any Subarray | Med🟡 | 1541.6<br>🔷 | [Link](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [View](./goals/goal2/MEDIUM/1749.maximum-absolute-sum-of-any-subarray.cpp) |
+| 2815 | Max Pair Sum In An Array | Easy🟢 | 1295.1<br>🟢 | [Link](https://leetcode.com/problems/max-pair-sum-in-an-array/) | [View](./goals/goal2/EASY/2815.max-pair-sum-in-an-array.cpp) |
 | 2824 | Count Pairs Whose Sum Is Less Than Target | Easy🟢 | 1165.9<br>⚪ | [Link](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | [View](./goals/goal2/EASY/2824.count-pairs-whose-sum-is-less-than-target.cpp) |
 | 3360 | Stone Removal Game | Easy🟢 | 1267.5<br>🟢 | [Link](https://leetcode.com/problems/stone-removal-game/) | [View](./goals/goal2/EASY/3360.stone-removal-game.cpp) |
 | 3364 | Minimum Positive Sum Subarray | Easy🟢 | 1300.6<br>🟢 | [Link](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [View](./goals/goal2/EASY/3364.minimum-positive-sum-subarray.cpp) |
