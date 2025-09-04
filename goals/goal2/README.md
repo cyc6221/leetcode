@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 9 |
+| Easy🟢 | 10 |
 | Med🟡 | 4 |
 | Hard🔴 | 0 |
-| **Total** | 13 |
+| **Total** | 14 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 9 / 30
+**Easy🟢**: 10 / 30
 
-[██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 30%
+[████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 33%
 
 **Med🟡**: 4 / 20
 
@@ -49,6 +49,7 @@ This is a 30-day LeetCode challenge.
 
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
+| 746 | Min Cost Climbing Stairs | Easy🟢 | 1358.4<br>🟢 | [Link](https://leetcode.com/problems/min-cost-climbing-stairs/) | [View](./goals/goal2/EASY/746.min-cost-climbing-stairs.cpp) |
 | 950 | Reveal Cards In Increasing Order | Med🟡 | 1686.4<br>🔵 | [Link](https://leetcode.com/problems/reveal-cards-in-increasing-order/) | [View](./goals/goal2/MEDIUM/950.reveal-cards-in-increasing-order.cpp) |
 | 1140 | Stone Game Ii | Med🟡 | 2035.0<br>🟣 | [Link](https://leetcode.com/problems/stone-game-ii/) | [View](./goals/goal2/MEDIUM/1140.stone-game-ii.cpp) |
 | 1185 | Day Of The Week | Easy🟢 | 1382.5<br>🟢 | [Link](https://leetcode.com/problems/day-of-the-week/) | [View](./goals/goal2/EASY/1185.day-of-the-week.cpp) |
