@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy🟢 | 10 |
-| Med🟡 | 5 |
+| Med🟡 | 6 |
 | Hard🔴 | 0 |
-| **Total** | 15 |
+| **Total** | 16 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 33%
 
-**Med🟡**: 5 / 20
+**Med🟡**: 6 / 20
 
-[███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 25%
+[██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 30%
 
 **Hard🔴**: 0 / 10
 
@@ -54,6 +54,7 @@ This is a 30-day LeetCode challenge.
 | 1140 | Stone Game Ii | Med🟡 | 2035.0<br>🟣 | [Link](https://leetcode.com/problems/stone-game-ii/) | [View](./goals/goal2/MEDIUM/1140.stone-game-ii.cpp) |
 | 1185 | Day Of The Week | Easy🟢 | 1382.5<br>🟢 | [Link](https://leetcode.com/problems/day-of-the-week/) | [View](./goals/goal2/EASY/1185.day-of-the-week.cpp) |
 | 1749 | Maximum Absolute Sum Of Any Subarray | Med🟡 | 1541.6<br>🔷 | [Link](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [View](./goals/goal2/MEDIUM/1749.maximum-absolute-sum-of-any-subarray.cpp) |
+| 2266 | Count Number Of Texts | Med🟡 | 1856.9<br>🔵 | [Link](https://leetcode.com/problems/count-number-of-texts/) | [View](./goals/goal2/MEDIUM/2266.count-number-of-texts.cpp) |
 | 2466 | Count Ways To Build Good Strings | Med🟡 | 1694.4<br>🔵 | [Link](https://leetcode.com/problems/count-ways-to-build-good-strings/) | [View](./goals/goal2/MEDIUM/2466.count-ways-to-build-good-strings.cpp) |
 | 2815 | Max Pair Sum In An Array | Easy🟢 | 1295.1<br>🟢 | [Link](https://leetcode.com/problems/max-pair-sum-in-an-array/) | [View](./goals/goal2/EASY/2815.max-pair-sum-in-an-array.cpp) |
 | 2824 | Count Pairs Whose Sum Is Less Than Target | Easy🟢 | 1165.9<br>⚪ | [Link](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | [View](./goals/goal2/EASY/2824.count-pairs-whose-sum-is-less-than-target.cpp) |
