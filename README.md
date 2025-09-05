@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 10 |
+| Easy🟢 | 11 |
 | Med🟡 | 7 |
 | Hard🔴 | 0 |
-| **Total** | 17 |
+| **Total** | 18 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 10 / 30
+**Easy🟢**: 11 / 30
 
-[████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 33%
+[██████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 36%
 
 **Med🟡**: 7 / 20
 
@@ -66,6 +66,7 @@ This is a 30-day LeetCode challenge.
 | 3370 | Smallest Number With All Set Bits | Easy🟢 | 1198.6<br>⚪ | [Link](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [View](./goals/goal2/EASY/3370.smallest-number-with-all-set-bits.cpp) |
 | 3633 | Earliest Finish Time For Land And Water Rides I | Easy🟢 | 1342.7<br>🟢 | [Link](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | [View](./goals/goal2/EASY/3633.earliest-finish-time-for-land-and-water-rides-i.cpp) |
 | 3634 | Minimum Removals To Balance Array | Med🟡 | 1453.1<br>🔷 | [Link](https://leetcode.com/problems/minimum-removals-to-balance-array/) | [View](./goals/goal2/MEDIUM/3634.minimum-removals-to-balance-array.cpp) |
+| 3668 | Restore Finishing Order | Easy🟢 | 1255.2<br>🟢 | [Link](https://leetcode.com/problems/restore-finishing-order/) | [View](./goals/goal2/EASY/3668.restore-finishing-order.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
 
