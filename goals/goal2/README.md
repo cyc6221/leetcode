@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 13 |
+| Easy🟢 | 14 |
 | Med🟡 | 7 |
 | Hard🔴 | 0 |
-| **Total** | 20 |
+| **Total** | 21 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 13 / 30
+**Easy🟢**: 14 / 30
 
-[██████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 43%
+[████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 46%
 
 **Med🟡**: 7 / 20
 
@@ -66,6 +66,7 @@ This is a 30-day LeetCode challenge.
 | 3370 | Smallest Number With All Set Bits | Easy🟢 | 1198.6<br>⚪ | [Link](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [View](./goals/goal2/EASY/3370.smallest-number-with-all-set-bits.cpp) |
 | 3633 | Earliest Finish Time For Land And Water Rides I | Easy🟢 | 1342.7<br>🟢 | [Link](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | [View](./goals/goal2/EASY/3633.earliest-finish-time-for-land-and-water-rides-i.cpp) |
 | 3634 | Minimum Removals To Balance Array | Med🟡 | 1453.1<br>🔷 | [Link](https://leetcode.com/problems/minimum-removals-to-balance-array/) | [View](./goals/goal2/MEDIUM/3634.minimum-removals-to-balance-array.cpp) |
+| 3643 | Flip Square Submatrix Vertically | Easy🟢 | 1235.0<br>🟢 | [Link](https://leetcode.com/problems/flip-square-submatrix-vertically/) | [View](./goals/goal2/EASY/3643.flip-square-submatrix-vertically.cpp) |
 | 3658 | Gcd Of Odd And Even Sums | Easy🟢 | 1220.1<br>🟢 | [Link](https://leetcode.com/problems/gcd-of-odd-and-even-sums/) | [View](./goals/goal2/EASY/3658.gcd-of-odd-and-even-sums.cpp) |
 | 3663 | Find The Least Frequent Digit | Easy🟢 | 1284.4<br>🟢 | [Link](https://leetcode.com/problems/find-the-least-frequent-digit/) | [View](./goals/goal2/EASY/3663.find-the-least-frequent-digit.cpp) |
 | 3668 | Restore Finishing Order | Easy🟢 | 1255.2<br>🟢 | [Link](https://leetcode.com/problems/restore-finishing-order/) | [View](./goals/goal2/EASY/3668.restore-finishing-order.cpp) |
