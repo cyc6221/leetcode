@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 16 |
+| Easy🟢 | 17 |
 | Med🟡 | 7 |
 | Hard🔴 | 0 |
-| **Total** | 23 |
+| **Total** | 24 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 16 / 30
+**Easy🟢**: 17 / 30
 
-[████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 53%
+[██████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░] 56%
 
 **Med🟡**: 7 / 20
 
@@ -64,6 +64,7 @@ This is a 30-day LeetCode challenge.
 | 3360 | Stone Removal Game | Easy🟢 | 1267.5<br>🟢 | [Link](https://leetcode.com/problems/stone-removal-game/) | [View](./goals/goal2/EASY/3360.stone-removal-game.cpp) |
 | 3364 | Minimum Positive Sum Subarray | Easy🟢 | 1300.6<br>🟢 | [Link](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [View](./goals/goal2/EASY/3364.minimum-positive-sum-subarray.cpp) |
 | 3370 | Smallest Number With All Set Bits | Easy🟢 | 1198.6<br>⚪ | [Link](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | [View](./goals/goal2/EASY/3370.smallest-number-with-all-set-bits.cpp) |
+| 3622 | Check Divisibility By Digit Sum And Product | Easy🟢 | 1148.9<br>⚪ | [Link](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/) | [View](./goals/goal2/EASY/3622.check-divisibility-by-digit-sum-and-product.cpp) |
 | 3633 | Earliest Finish Time For Land And Water Rides I | Easy🟢 | 1342.7<br>🟢 | [Link](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | [View](./goals/goal2/EASY/3633.earliest-finish-time-for-land-and-water-rides-i.cpp) |
 | 3634 | Minimum Removals To Balance Array | Med🟡 | 1453.1<br>🔷 | [Link](https://leetcode.com/problems/minimum-removals-to-balance-array/) | [View](./goals/goal2/MEDIUM/3634.minimum-removals-to-balance-array.cpp) |
 | 3637 | Trionic Array I | Easy🟢 | 1263.9<br>🟢 | [Link](https://leetcode.com/problems/trionic-array-i/) | [View](./goals/goal2/EASY/3637.trionic-array-i.cpp) |
