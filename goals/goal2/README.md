@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 15 |
+| Easy🟢 | 16 |
 | Med🟡 | 7 |
 | Hard🔴 | 0 |
-| **Total** | 22 |
+| **Total** | 23 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 15 / 30
+**Easy🟢**: 16 / 30
 
-[██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 50%
+[████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 53%
 
 **Med🟡**: 7 / 20
 
@@ -71,6 +71,7 @@ This is a 30-day LeetCode challenge.
 | 3658 | Gcd Of Odd And Even Sums | Easy🟢 | 1220.1<br>🟢 | [Link](https://leetcode.com/problems/gcd-of-odd-and-even-sums/) | [View](./goals/goal2/EASY/3658.gcd-of-odd-and-even-sums.cpp) |
 | 3663 | Find The Least Frequent Digit | Easy🟢 | 1284.4<br>🟢 | [Link](https://leetcode.com/problems/find-the-least-frequent-digit/) | [View](./goals/goal2/EASY/3663.find-the-least-frequent-digit.cpp) |
 | 3668 | Restore Finishing Order | Easy🟢 | 1255.2<br>🟢 | [Link](https://leetcode.com/problems/restore-finishing-order/) | [View](./goals/goal2/EASY/3668.restore-finishing-order.cpp) |
+| 3674 | Minimum Operations To Equalize Array | Easy🟢 | - | [Link](https://leetcode.com/problems/minimum-operations-to-equalize-array/) | [View](./goals/goal2/EASY/3674.minimum-operations-to-equalize-array.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
 
