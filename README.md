@@ -12,8 +12,8 @@ This is a 30-day LeetCode challenge.
 
 - **Duration**: 2025-09-13 to 2025-10-12
 - **Goal**:
-  - Solve **30 Easy** problems
-  - Solve **20 Medium** problems
+  - Solve **10 Easy** problems
+  - Solve **10 Medium** problems
   - Solve **10 Hard** problems
 
 <!-- LEETCODE_SUMMARY_START -->
@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 0 |
+| Easy🟢 | 1 |
 | Med🟡 | 0 |
 | Hard🔴 | 0 |
-| **Total** | 0 |
+| **Total** | 1 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 0 / 10
+**Easy🟢**: 1 / 10
 
-[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%
+[██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
 
 **Med🟡**: 0 / 20
 
@@ -49,6 +49,7 @@ This is a 30-day LeetCode challenge.
 
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
+| 3340 | Check Balanced String | Easy🟢 | 1190.7<br>⚪ | [Link](https://leetcode.com/problems/check-balanced-string/) | [View](./goals/goal3/EASY/3340.check-balanced-string.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
 
