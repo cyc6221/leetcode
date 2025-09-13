@@ -148,11 +148,9 @@ def generate_table_contest(contest: str) -> str:
     return table
 
 def generate_table_all_contest() -> str:
-    # contest_path = os.path.join(CONTEST_DIR, contest)
-
     table = "## Problem List\n\n"
-    table += "| ID | Title | Rating | Link | Code |\n"
-    table += "|:--:|-------|:------:|:----:|:----:|\n"
+    table += "| Contest | ID | Title | Rating | Link | Code |\n"
+    table += "|:-------:|:--:|-------|:------:|:----:|:----:|\n"
 
     entries = []
     rmap = ratings_map()
@@ -172,14 +170,15 @@ def generate_table_all_contest() -> str:
                     code_path = "./" + rel.as_posix() 
                     lc_url = f"https://leetcode.com/problems/{kebab}/"
                     rating_val = rmap.get(pid)
-                    entries.append((pid, qid, title, rating_val, lc_url, code_path))
+
+                    entries.append((pid, folder, qid, title, rating_val, lc_url, code_path))
 
     # Sort by numeric ID
     entries.sort()
 
-    for _, qid, title, rating_val, lc_url, code_path in entries:
+    for _, contest, qid, title, rating_val, lc_url, code_path in entries:
         code_link = f"[View]({code_path})"
         lc_link = f"[Link]({lc_url})"
-        table += f"| {qid} | {title} | {_fmt_rating(rating_val)} | {lc_link} | {code_link} |\n"
+        table += f"| {contest} | {qid} | {title} | {_fmt_rating(rating_val)} | {lc_link} | {code_link} |\n"
 
     return table
