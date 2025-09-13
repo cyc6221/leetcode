@@ -12,8 +12,8 @@ This is a 30-day LeetCode challenge.
 
 - **Duration**: 2025-09-13 to 2025-10-12
 - **Goal**:
-  - Solve **30 Easy** problems
-  - Solve **20 Medium** problems
+  - Solve **10 Easy** problems
+  - Solve **10 Medium** problems
   - Solve **10 Hard** problems
 
 <!-- LEETCODE_SUMMARY_START -->

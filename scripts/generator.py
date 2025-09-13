@@ -83,7 +83,7 @@ def generate_summary_table(goal: str) -> str:
     return table
 
 DIFFICULTY_TOTAL = {
-    "EASY": 30,
+    "EASY": 10,
     "MEDIUM": 20,
     "HARD": 10
 }
