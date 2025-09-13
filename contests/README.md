@@ -16,3 +16,20 @@
 ## Note
 
 **Total C++ files tracked:** 12
+
+## Problem List
+
+| ID | Title | Rating | Link | Code |
+|:--:|-------|:------:|:----:|:----:|
+| 3648 | Minimum Sensors To Cover Grid | 1396.0<br>🟢 | [Link](https://leetcode.com/problems/minimum-sensors-to-cover-grid/) | [View](./contests/3648.minimum-sensors-to-cover-grid.cpp) |
+| 3649 | Number Of Perfect Pairs | 1715.6<br>🔵 | [Link](https://leetcode.com/problems/number-of-perfect-pairs/) | [View](./contests/3649.number-of-perfect-pairs.cpp) |
+| 3650 | Minimum Cost Path With Edge Reversals | 1853.7<br>🔵 | [Link](https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/) | [View](./contests/3650.minimum-cost-path-with-edge-reversals.cpp) |
+| 3651 | Minimum Cost Path With Teleportations | 2411.2<br>🔴 | [Link](https://leetcode.com/problems/minimum-cost-path-with-teleportations/) | [View](./contests/3651.minimum-cost-path-with-teleportations.cpp) |
+| 3652 | Best Time To Buy And Sell Stock Using Strategy | 1556.8<br>🔷 | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy/) | [View](./contests/3652.best-time-to-buy-and-sell-stock-using-strategy.cpp) |
+| 3653 | Xor After Range Multiplication Queries I | 1556.3<br>🔷 | [Link](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/) | [View](./contests/3653.xor-after-range-multiplication-queries-i.cpp) |
+| 3654 | Minimum Sum After Divisible Sum Deletions | 2038.8<br>🟣 | [Link](https://leetcode.com/problems/minimum-sum-after-divisible-sum-deletions/) | [View](./contests/3654.minimum-sum-after-divisible-sum-deletions.cpp) |
+| 3655 | Xor After Range Multiplication Queries Ii | 2453.9<br>🔴 | [Link](https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/) | [View](./contests/3655.xor-after-range-multiplication-queries-ii.cpp) |
+| 3678 | Smallest Absent Positive Greater Than Average | - | [Link](https://leetcode.com/problems/smallest-absent-positive-greater-than-average/) | [View](./contests/3678.smallest-absent-positive-greater-than-average.cpp) |
+| 3679 | Minimum Discards To Balance Inventory | - | [Link](https://leetcode.com/problems/minimum-discards-to-balance-inventory/) | [View](./contests/3679.minimum-discards-to-balance-inventory.cpp) |
+| 3680 | Generate Schedule | - | [Link](https://leetcode.com/problems/generate-schedule/) | [View](./contests/3680.generate-schedule.cpp) |
+| 3681 | Maximum Xor Of Subsequences | - | [Link](https://leetcode.com/problems/maximum-xor-of-subsequences/) | [View](./contests/3681.maximum-xor-of-subsequences.cpp) |

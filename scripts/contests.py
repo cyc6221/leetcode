@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 
 from .paths import CONTESTS_DIR, GITHUB_CONTESTS_BASE
-from .generator import generate_table_contest
+from .generator import generate_table_contest, generate_table_all_contest
 from .blocks import replace_block
 
 
@@ -78,6 +78,10 @@ def update_index_readme(contest_root: Path):
 
     md.append(f"## Note\n")
     md.append(f"**Total C++ files tracked:** {total_cnt}\n")
+
+    table = generate_table_all_contest()
+    md.append(table)
+
     (contest_root / "README.md").write_text("\n".join(md), encoding="utf-8")
     return total_cnt
 
