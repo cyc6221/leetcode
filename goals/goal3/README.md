@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 1 |
+| Easy🟢 | 2 |
 | Med🟡 | 0 |
 | Hard🔴 | 0 |
-| **Total** | 1 |
+| **Total** | 2 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 1 / 10
+**Easy🟢**: 2 / 10
 
-[██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
+[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
 
 **Med🟡**: 0 / 20
 
@@ -50,6 +50,7 @@ This is a 30-day LeetCode challenge.
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
 | 3340 | Check Balanced String | Easy🟢 | 1190.7<br>⚪ | [Link](https://leetcode.com/problems/check-balanced-string/) | [View](./goals/goal3/EASY/3340.check-balanced-string.cpp) |
+| 3345 | Smallest Divisible Digit Product I | Easy🟢 | 1235.1<br>🟢 | [Link](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | [View](./goals/goal3/EASY/3345.smallest-divisible-digit-product-i.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
 
