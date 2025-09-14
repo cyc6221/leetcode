@@ -167,7 +167,7 @@ def generate_table_all_contest() -> str:
                     # code_path = f"./{folder_path}/{file}"
                     # p = Path(CONTEST_DIR) / file
                     p = Path(folder_path) / file
-                    rel = Path(os.path.relpath(p.resolve(), REPO_ROOT))
+                    rel = Path(os.path.relpath(p.resolve(), CONTEST_DIR))
                     code_path = "./" + rel.as_posix() 
                     lc_url = f"https://leetcode.com/problems/{kebab}/"
                     rating_val = rmap.get(pid)
