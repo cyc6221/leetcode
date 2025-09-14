@@ -5,6 +5,7 @@
 | Contest | LeetCode | GitHub | C++ Files |
 |:-------:|:--------:|:------:|:---------:|
 | weekly463 | [Link](https://leetcode.com/contest/weekly-contest-463/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly463) | 4 |
+| weekly467 | [Link](https://leetcode.com/contest/weekly-contest-467/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly467) | 4 |
 
 ## Biweekly
 
@@ -15,7 +16,7 @@
 
 ## Note
 
-**Total C++ files tracked:** 12
+**Total C++ files tracked:** 16
 
 ## Problem List
 
@@ -33,3 +34,7 @@
 | biweekly165 | 3679 | Minimum Discards To Balance Inventory | - | [Link](https://leetcode.com/problems/minimum-discards-to-balance-inventory/) | [View](./contests/3679.minimum-discards-to-balance-inventory.cpp) |
 | biweekly165 | 3680 | Generate Schedule | - | [Link](https://leetcode.com/problems/generate-schedule/) | [View](./contests/3680.generate-schedule.cpp) |
 | biweekly165 | 3681 | Maximum Xor Of Subsequences | - | [Link](https://leetcode.com/problems/maximum-xor-of-subsequences/) | [View](./contests/3681.maximum-xor-of-subsequences.cpp) |
+| weekly467 | 3683 | Earliest Time To Finish One Task | - | [Link](https://leetcode.com/problems/earliest-time-to-finish-one-task/) | [View](./contests/3683.earliest-time-to-finish-one-task.cpp) |
+| weekly467 | 3684 | Maximize Sum Of At Most K Distinct Elements | - | [Link](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [View](./contests/3684.maximize-sum-of-at-most-k-distinct-elements.cpp) |
+| weekly467 | 3685 | Subsequence Sum After Capping Elements | - | [Link](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | [View](./contests/3685.subsequence-sum-after-capping-elements.cpp) |
+| weekly467 | 3686 | Number Of Stable Subsequences | - | [Link](https://leetcode.com/problems/number-of-stable-subsequences/) | [View](./contests/3686.number-of-stable-subsequences.cpp) |
