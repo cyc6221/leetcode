@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy🟢 | 2 |
-| Med🟡 | 1 |
+| Med🟡 | 2 |
 | Hard🔴 | 0 |
-| **Total** | 3 |
+| **Total** | 4 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
 
-**Med🟡**: 1 / 20
+**Med🟡**: 2 / 20
 
-[███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 5%
+[██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
 
 **Hard🔴**: 0 / 10
 
@@ -52,6 +52,7 @@ This is a 30-day LeetCode challenge.
 | 3340 | Check Balanced String | Easy🟢 | 1190.7<br>⚪ | [Link](https://leetcode.com/problems/check-balanced-string/) | [View](./goals/goal3/EASY/3340.check-balanced-string.cpp) |
 | 3345 | Smallest Divisible Digit Product I | Easy🟢 | 1235.1<br>🟢 | [Link](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | [View](./goals/goal3/EASY/3345.smallest-divisible-digit-product-i.cpp) |
 | 3346 | Maximum Frequency Of An Element After Performing Operations I | Med🟡 | 1864.9<br>🔵 | [Link](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/) | [View](./goals/goal3/MEDIUM/3346.maximum-frequency-of-an-element-after-performing-operations-i.cpp) |
+| 3446 | Sort Matrix By Diagonals | Med🟡 | 1372.8<br>🟢 | [Link](https://leetcode.com/problems/sort-matrix-by-diagonals/) | [View](./goals/goal3/MEDIUM/3446.sort-matrix-by-diagonals.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
 
