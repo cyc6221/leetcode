@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy🟢 | 2 |
-| Med🟡 | 2 |
+| Med🟡 | 3 |
 | Hard🔴 | 0 |
-| **Total** | 4 |
+| **Total** | 5 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
 
-**Med🟡**: 2 / 20
+**Med🟡**: 3 / 20
 
-[██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
+[█████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 15%
 
 **Hard🔴**: 0 / 10
 
@@ -53,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 3345 | Smallest Divisible Digit Product I | Easy🟢 | 1235.1<br>🟢 | [Link](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | [View](./goals/goal3/EASY/3345.smallest-divisible-digit-product-i.cpp) |
 | 3346 | Maximum Frequency Of An Element After Performing Operations I | Med🟡 | 1864.9<br>🔵 | [Link](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/) | [View](./goals/goal3/MEDIUM/3346.maximum-frequency-of-an-element-after-performing-operations-i.cpp) |
 | 3446 | Sort Matrix By Diagonals | Med🟡 | 1372.8<br>🟢 | [Link](https://leetcode.com/problems/sort-matrix-by-diagonals/) | [View](./goals/goal3/MEDIUM/3446.sort-matrix-by-diagonals.cpp) |
+| 3685 | Subsequence Sum After Capping Elements | Med🟡 | - | [Link](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | [View](./goals/goal3/MEDIUM/3685.subsequence-sum-after-capping-elements.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
 
