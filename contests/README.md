@@ -6,6 +6,7 @@
 |:-------:|:--------:|:------:|:---------:|
 | weekly463 | [Link](https://leetcode.com/contest/weekly-contest-463/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly463) | 4 |
 | weekly467 | [Link](https://leetcode.com/contest/weekly-contest-467/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly467) | 4 |
+| weekly468 | [Link](https://leetcode.com/contest/weekly-contest-468/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly468) | 4 |
 
 ## Biweekly
 
@@ -16,7 +17,7 @@
 
 ## Note
 
-**Total C++ files tracked:** 16
+**Total C++ files tracked:** 20
 
 ## Problem List
 
@@ -38,3 +39,7 @@
 | weekly467 | 3684 | Maximize Sum Of At Most K Distinct Elements | 1298.8<br>🟢 | [Link](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [View](./weekly467/3684.maximize-sum-of-at-most-k-distinct-elements.cpp) |
 | weekly467 | 3685 | Subsequence Sum After Capping Elements | 2073.4<br>🟣 | [Link](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | [View](./weekly467/3685.subsequence-sum-after-capping-elements.cpp) |
 | weekly467 | 3686 | Number Of Stable Subsequences | 1969.3<br>🟣 | [Link](https://leetcode.com/problems/number-of-stable-subsequences/) | [View](./weekly467/3686.number-of-stable-subsequences.cpp) |
+| weekly468 | 3688 | Bitwise Or Of Even Numbers In An Array | - | [Link](https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/) | [View](./weekly468/3688.bitwise-or-of-even-numbers-in-an-array.cpp) |
+| weekly468 | 3689 | Maximum Total Subarray Value I | - | [Link](https://leetcode.com/problems/maximum-total-subarray-value-i/) | [View](./weekly468/3689.maximum-total-subarray-value-i.cpp) |
+| weekly468 | 3690 | Split And Merge Array Transformation | - | [Link](https://leetcode.com/problems/split-and-merge-array-transformation/) | [View](./weekly468/3690.split-and-merge-array-transformation.cpp) |
+| weekly468 | 3691 | Maximum Total Subarray Value Ii | - | [Link](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | [View](./weekly468/3691.maximum-total-subarray-value-ii.cpp) |
