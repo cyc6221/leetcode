@@ -2,6 +2,7 @@
 
 ## DS/
 - [BST.cpp](./DS/BST.cpp)
+- [RMQ.cpp](./DS/RMQ.cpp)
 - [UnionFind.cpp](./DS/UnionFind.cpp)
 
 ## math/
