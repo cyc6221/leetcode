@@ -14,10 +14,11 @@
 |:-------:|:--------:|:------:|:---------:|
 | biweekly163 | [Link](https://leetcode.com/contest/biweekly-contest-163/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly163) | 4 |
 | biweekly165 | [Link](https://leetcode.com/contest/biweekly-contest-165/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly165) | 4 |
+| biweekly166 | [Link](https://leetcode.com/contest/biweekly-contest-166/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly166) | 4 |
 
 ## Note
 
-**Total C++ files tracked:** 20
+**Total C++ files tracked:** 24
 
 ## Problem List
 
@@ -39,7 +40,11 @@
 | weekly467 | 3684 | Maximize Sum Of At Most K Distinct Elements | 1298.8<br>🟢 | [Link](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [View](./weekly467/3684.maximize-sum-of-at-most-k-distinct-elements.cpp) |
 | weekly467 | 3685 | Subsequence Sum After Capping Elements | 2073.4<br>🟣 | [Link](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | [View](./weekly467/3685.subsequence-sum-after-capping-elements.cpp) |
 | weekly467 | 3686 | Number Of Stable Subsequences | 1969.3<br>🟣 | [Link](https://leetcode.com/problems/number-of-stable-subsequences/) | [View](./weekly467/3686.number-of-stable-subsequences.cpp) |
-| weekly468 | 3688 | Bitwise Or Of Even Numbers In An Array | - | [Link](https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/) | [View](./weekly468/3688.bitwise-or-of-even-numbers-in-an-array.cpp) |
-| weekly468 | 3689 | Maximum Total Subarray Value I | - | [Link](https://leetcode.com/problems/maximum-total-subarray-value-i/) | [View](./weekly468/3689.maximum-total-subarray-value-i.cpp) |
-| weekly468 | 3690 | Split And Merge Array Transformation | - | [Link](https://leetcode.com/problems/split-and-merge-array-transformation/) | [View](./weekly468/3690.split-and-merge-array-transformation.cpp) |
-| weekly468 | 3691 | Maximum Total Subarray Value Ii | - | [Link](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | [View](./weekly468/3691.maximum-total-subarray-value-ii.cpp) |
+| weekly468 | 3688 | Bitwise Or Of Even Numbers In An Array | 1204.9<br>🟢 | [Link](https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/) | [View](./weekly468/3688.bitwise-or-of-even-numbers-in-an-array.cpp) |
+| weekly468 | 3689 | Maximum Total Subarray Value I | 1370.7<br>🟢 | [Link](https://leetcode.com/problems/maximum-total-subarray-value-i/) | [View](./weekly468/3689.maximum-total-subarray-value-i.cpp) |
+| weekly468 | 3690 | Split And Merge Array Transformation | 1982.5<br>🟣 | [Link](https://leetcode.com/problems/split-and-merge-array-transformation/) | [View](./weekly468/3690.split-and-merge-array-transformation.cpp) |
+| weekly468 | 3691 | Maximum Total Subarray Value Ii | 2469.0<br>🔴 | [Link](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | [View](./weekly468/3691.maximum-total-subarray-value-ii.cpp) |
+| biweekly166 | 3692 | Majority Frequency Characters | - | [Link](https://leetcode.com/problems/majority-frequency-characters/) | [View](./biweekly166/3692.majority-frequency-characters.cpp) |
+| biweekly166 | 3693 | Climbing Stairs Ii | - | [Link](https://leetcode.com/problems/climbing-stairs-ii/) | [View](./biweekly166/3693.climbing-stairs-ii.cpp) |
+| biweekly166 | 3694 | Distinct Points Reachable After Substring Removal | - | [Link](https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/) | [View](./biweekly166/3694.distinct-points-reachable-after-substring-removal.cpp) |
+| biweekly166 | 3695 | Maximize Alternating Sum Using Swaps | - | [Link](https://leetcode.com/problems/maximize-alternating-sum-using-swaps/) | [View](./biweekly166/3695.maximize-alternating-sum-using-swaps.cpp) |
