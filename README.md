@@ -23,8 +23,8 @@ This is a 30-day LeetCode challenge.
 |------------|-------|
 | Easy🟢 | 3 |
 | Med🟡 | 4 |
-| Hard🔴 | 1 |
-| **Total** | 8 |
+| Hard🔴 | 2 |
+| **Total** | 9 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -39,9 +39,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
 
-**Hard🔴**: 1 / 10
+**Hard🔴**: 2 / 10
 
-[██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
+[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
 <!-- LEETCODE_PROGRESS_END -->
 
 <!-- LEETCODE_TABLE_START -->
@@ -49,6 +49,7 @@ This is a 30-day LeetCode challenge.
 
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
+| 1028 | Recover A Tree From Preorder Traversal | Hard🔴 | 1797.5<br>🔵 | [Link](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/) | [View](./goals/goal3/HARD/1028.recover-a-tree-from-preorder-traversal.cpp) |
 | 3318 | Find X Sum Of All K Long Subarrays I | Easy🟢 | 1457.5<br>🔷 | [Link](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/) | [View](./goals/goal3/EASY/3318.find-x-sum-of-all-k-long-subarrays-i.cpp) |
 | 3340 | Check Balanced String | Easy🟢 | 1190.7<br>⚪ | [Link](https://leetcode.com/problems/check-balanced-string/) | [View](./goals/goal3/EASY/3340.check-balanced-string.cpp) |
 | 3345 | Smallest Divisible Digit Product I | Easy🟢 | 1235.1<br>🟢 | [Link](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | [View](./goals/goal3/EASY/3345.smallest-divisible-digit-product-i.cpp) |
