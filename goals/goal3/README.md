@@ -55,7 +55,7 @@ This is a 30-day LeetCode challenge.
 | 3446 | Sort Matrix By Diagonals | Med🟡 | 1372.8<br>🟢 | [Link](https://leetcode.com/problems/sort-matrix-by-diagonals/) | [View](./goals/goal3/MEDIUM/3446.sort-matrix-by-diagonals.cpp) |
 | 3676 | Count Bowl Subarrays | Med🟡 | 1847.5<br>🔵 | [Link](https://leetcode.com/problems/count-bowl-subarrays/) | [View](./goals/goal3/MEDIUM/3676.count-bowl-subarrays.cpp) |
 | 3685 | Subsequence Sum After Capping Elements | Med🟡 | 2073.4<br>🟣 | [Link](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | [View](./goals/goal3/MEDIUM/3685.subsequence-sum-after-capping-elements.cpp) |
-| 3691 | Maximum Total Subarray Value Ii | Hard🔴 | - | [Link](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | [View](./goals/goal3/HARD/3691.maximum-total-subarray-value-ii.cpp) |
+| 3691 | Maximum Total Subarray Value Ii | Hard🔴 | 2469.0<br>🔴 | [Link](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | [View](./goals/goal3/HARD/3691.maximum-total-subarray-value-ii.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
 
