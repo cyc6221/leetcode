@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 2 |
+| Easy🟢 | 3 |
 | Med🟡 | 4 |
 | Hard🔴 | 1 |
-| **Total** | 7 |
+| **Total** | 8 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 2 / 10
+**Easy🟢**: 3 / 10
 
-[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 20%
+[██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 30%
 
 **Med🟡**: 4 / 20
 
@@ -49,6 +49,7 @@ This is a 30-day LeetCode challenge.
 
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
+| 3318 | Find X Sum Of All K Long Subarrays I | Easy🟢 | 1457.5<br>🔷 | [Link](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/) | [View](./goals/goal3/EASY/3318.find-x-sum-of-all-k-long-subarrays-i.cpp) |
 | 3340 | Check Balanced String | Easy🟢 | 1190.7<br>⚪ | [Link](https://leetcode.com/problems/check-balanced-string/) | [View](./goals/goal3/EASY/3340.check-balanced-string.cpp) |
 | 3345 | Smallest Divisible Digit Product I | Easy🟢 | 1235.1<br>🟢 | [Link](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | [View](./goals/goal3/EASY/3345.smallest-divisible-digit-product-i.cpp) |
 | 3346 | Maximum Frequency Of An Element After Performing Operations I | Med🟡 | 1864.9<br>🔵 | [Link](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/) | [View](./goals/goal3/MEDIUM/3346.maximum-frequency-of-an-element-after-performing-operations-i.cpp) |
