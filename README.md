@@ -3,6 +3,8 @@
 This repository contains my personal solutions to problems on [LeetCode](https://leetcode.com/), written in **C++**.
 
 * File Naming Convention : `{id}.{kebab-case-title}.cpp`
+* `python -m scripts.cli all`
+* `python -m scripts.cli update-contests`
 
 ---
 
