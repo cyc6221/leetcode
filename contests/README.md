@@ -7,6 +7,7 @@
 | weekly463 | [Link](https://leetcode.com/contest/weekly-contest-463/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly463) | 4 |
 | weekly467 | [Link](https://leetcode.com/contest/weekly-contest-467/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly467) | 4 |
 | weekly468 | [Link](https://leetcode.com/contest/weekly-contest-468/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly468) | 4 |
+| weekly469 | [Link](https://leetcode.com/contest/weekly-contest-469/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly469) | 4 |
 
 ## Biweekly
 
@@ -18,7 +19,7 @@
 
 ## Note
 
-**Total C++ files tracked:** 24
+**Total C++ files tracked:** 28
 
 ## Problem List
 
@@ -48,3 +49,6 @@
 | biweekly166 | 3693 | Climbing Stairs Ii | - | [Link](https://leetcode.com/problems/climbing-stairs-ii/) | [View](./biweekly166/3693.climbing-stairs-ii.cpp) |
 | biweekly166 | 3694 | Distinct Points Reachable After Substring Removal | - | [Link](https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/) | [View](./biweekly166/3694.distinct-points-reachable-after-substring-removal.cpp) |
 | biweekly166 | 3695 | Maximize Alternating Sum Using Swaps | - | [Link](https://leetcode.com/problems/maximize-alternating-sum-using-swaps/) | [View](./biweekly166/3695.maximize-alternating-sum-using-swaps.cpp) |
+| weekly469 | 3697 | Compute Decimal Representation | - | [Link](https://leetcode.com/problems/compute-decimal-representation/) | [View](./weekly469/3697.compute-decimal-representation.cpp) |
+| weekly469 | 3698 | Split Array With Minimum Difference | - | [Link](https://leetcode.com/problems/split-array-with-minimum-difference/) | [View](./weekly469/3698.split-array-with-minimum-difference.cpp) |
+| weekly469 | 3699 | Number Of Zigzag Arrays I | - | [Link](https://leetcode.com/problems/number-of-zigzag-arrays-i/) | [View](./weekly469/3699.number-of-zigzag-arrays-i.cpp) |
