@@ -3,8 +3,6 @@
 This repository contains my personal solutions to problems on [LeetCode](https://leetcode.com/), written in **C++**.
 
 * File Naming Convention : `{id}.{kebab-case-title}.cpp`
-* `python -m scripts.cli all`
-* `python -m scripts.cli update-contests`
 
 ---
 
@@ -24,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy🟢 | 3 |
-| Med🟡 | 7 |
+| Med🟡 | 8 |
 | Hard🔴 | 2 |
-| **Total** | 12 |
+| **Total** | 13 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -37,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 30%
 
-**Med🟡**: 7 / 20
+**Med🟡**: 8 / 20
 
-[█████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 35%
+[████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 40%
 
 **Hard🔴**: 2 / 10
 
@@ -55,6 +53,7 @@ This is a 30-day LeetCode challenge.
 | 1605 | Find Valid Matrix Given Row And Column Sums | Med🟡 | 1867.9<br>🔵 | [Link](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/) | [View](./goals/goal3/MEDIUM/1605.find-valid-matrix-given-row-and-column-sums.cpp) |
 | 1877 | Minimize Maximum Pair Sum In Array | Med🟡 | 1301.4<br>🟢 | [Link](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | [View](./goals/goal3/MEDIUM/1877.minimize-maximum-pair-sum-in-array.cpp) |
 | 1963 | Minimum Number Of Swaps To Make The String Balanced | Med🟡 | 1688.9<br>🔵 | [Link](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) | [View](./goals/goal3/MEDIUM/1963.minimum-number-of-swaps-to-make-the-string-balanced.cpp) |
+| 3100 | Water Bottles Ii | Med🟡 | 1366.3<br>🟢 | [Link](https://leetcode.com/problems/water-bottles-ii/) | [View](./goals/goal3/MEDIUM/3100.water-bottles-ii.cpp) |
 | 3318 | Find X Sum Of All K Long Subarrays I | Easy🟢 | 1457.5<br>🔷 | [Link](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/) | [View](./goals/goal3/EASY/3318.find-x-sum-of-all-k-long-subarrays-i.cpp) |
 | 3340 | Check Balanced String | Easy🟢 | 1190.7<br>⚪ | [Link](https://leetcode.com/problems/check-balanced-string/) | [View](./goals/goal3/EASY/3340.check-balanced-string.cpp) |
 | 3345 | Smallest Divisible Digit Product I | Easy🟢 | 1235.1<br>🟢 | [Link](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | [View](./goals/goal3/EASY/3345.smallest-divisible-digit-product-i.cpp) |
