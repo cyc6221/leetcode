@@ -21,19 +21,19 @@ This is a 30-day LeetCode challenge.
 
 | Difficulty | Count |
 |------------|-------|
-| Easy🟢 | 3 |
+| Easy🟢 | 4 |
 | Med🟡 | 8 |
 | Hard🔴 | 2 |
-| **Total** | 13 |
+| **Total** | 14 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
 <!-- LEETCODE_PROGRESS_START -->
 ## Difficulty Progress
 
-**Easy🟢**: 3 / 10
+**Easy🟢**: 4 / 10
 
-[██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 30%
+[████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 40%
 
 **Med🟡**: 8 / 20
 
@@ -58,6 +58,7 @@ This is a 30-day LeetCode challenge.
 | 3340 | Check Balanced String | Easy🟢 | 1190.7<br>⚪ | [Link](https://leetcode.com/problems/check-balanced-string/) | [View](./goals/goal3/EASY/3340.check-balanced-string.cpp) |
 | 3345 | Smallest Divisible Digit Product I | Easy🟢 | 1235.1<br>🟢 | [Link](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | [View](./goals/goal3/EASY/3345.smallest-divisible-digit-product-i.cpp) |
 | 3346 | Maximum Frequency Of An Element After Performing Operations I | Med🟡 | 1864.9<br>🔵 | [Link](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/) | [View](./goals/goal3/MEDIUM/3346.maximum-frequency-of-an-element-after-performing-operations-i.cpp) |
+| 3349 | Adjacent Increasing Subarrays Detection I | Easy🟢 | 1298.9<br>🟢 | [Link](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/) | [View](./goals/goal3/EASY/3349.adjacent-increasing-subarrays-detection-i.cpp) |
 | 3446 | Sort Matrix By Diagonals | Med🟡 | 1372.8<br>🟢 | [Link](https://leetcode.com/problems/sort-matrix-by-diagonals/) | [View](./goals/goal3/MEDIUM/3446.sort-matrix-by-diagonals.cpp) |
 | 3676 | Count Bowl Subarrays | Med🟡 | 1847.5<br>🔵 | [Link](https://leetcode.com/problems/count-bowl-subarrays/) | [View](./goals/goal3/MEDIUM/3676.count-bowl-subarrays.cpp) |
 | 3685 | Subsequence Sum After Capping Elements | Med🟡 | 2073.4<br>🟣 | [Link](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | [View](./goals/goal3/MEDIUM/3685.subsequence-sum-after-capping-elements.cpp) |
