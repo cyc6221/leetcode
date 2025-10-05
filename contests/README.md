@@ -8,6 +8,7 @@
 | weekly467 | [Link](https://leetcode.com/contest/weekly-contest-467/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly467) | 4 |
 | weekly468 | [Link](https://leetcode.com/contest/weekly-contest-468/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly468) | 4 |
 | weekly469 | [Link](https://leetcode.com/contest/weekly-contest-469/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly469) | 4 |
+| weekly470 | [Link](https://leetcode.com/contest/weekly-contest-470/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly470) | 4 |
 
 ## Biweekly
 
@@ -19,7 +20,7 @@
 
 ## Note
 
-**Total C++ files tracked:** 28
+**Total C++ files tracked:** 32
 
 ## Problem List
 
@@ -52,3 +53,7 @@
 | weekly469 | 3697 | Compute Decimal Representation | 1250.8<br>🟢 | [Link](https://leetcode.com/problems/compute-decimal-representation/) | [View](./weekly469/3697.compute-decimal-representation.cpp) |
 | weekly469 | 3698 | Split Array With Minimum Difference | 1648.8<br>🔵 | [Link](https://leetcode.com/problems/split-array-with-minimum-difference/) | [View](./weekly469/3698.split-array-with-minimum-difference.cpp) |
 | weekly469 | 3699 | Number Of Zigzag Arrays I | 2123.1<br>🟠 | [Link](https://leetcode.com/problems/number-of-zigzag-arrays-i/) | [View](./weekly469/3699.number-of-zigzag-arrays-i.cpp) |
+| weekly470 | 3701 | Compute Alternating Sum | - | [Link](https://leetcode.com/problems/compute-alternating-sum/) | [View](./weekly470/3701.compute-alternating-sum.cpp) |
+| weekly470 | 3702 | Longest Subsequence With Non Zero Bitwise Xor | - | [Link](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/) | [View](./weekly470/3702.longest-subsequence-with-non-zero-bitwise-xor.cpp) |
+| weekly470 | 3703 | Remove K Balanced Substrings | - | [Link](https://leetcode.com/problems/remove-k-balanced-substrings/) | [View](./weekly470/3703.remove-k-balanced-substrings.cpp) |
+| weekly470 | 3704 | Count No Zero Pairs That Sum To N | - | [Link](https://leetcode.com/problems/count-no-zero-pairs-that-sum-to-n/) | [View](./weekly470/3704.count-no-zero-pairs-that-sum-to-n.cpp) |
