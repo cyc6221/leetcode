@@ -22,9 +22,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy🟢 | 4 |
-| Med🟡 | 8 |
+| Med🟡 | 9 |
 | Hard🔴 | 2 |
-| **Total** | 14 |
+| **Total** | 15 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -35,9 +35,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 40%
 
-**Med🟡**: 8 / 20
+**Med🟡**: 9 / 20
 
-[████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 40%
+[███████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 45%
 
 **Hard🔴**: 2 / 10
 
@@ -49,6 +49,7 @@ This is a 30-day LeetCode challenge.
 
 | ID | Title | Diff | Rating | Link | Code |
 |:--:|-------|:----:|:------:|:----:|:----:|
+| 75 | Sort Colors | Med🟡 | - | [Link](https://leetcode.com/problems/sort-colors/) | [View](./goals/goal3/MEDIUM/75.sort-colors.cpp) |
 | 1028 | Recover A Tree From Preorder Traversal | Hard🔴 | 1797.5<br>🔵 | [Link](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/) | [View](./goals/goal3/HARD/1028.recover-a-tree-from-preorder-traversal.cpp) |
 | 1605 | Find Valid Matrix Given Row And Column Sums | Med🟡 | 1867.9<br>🔵 | [Link](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/) | [View](./goals/goal3/MEDIUM/1605.find-valid-matrix-given-row-and-column-sums.cpp) |
 | 1877 | Minimize Maximum Pair Sum In Array | Med🟡 | 1301.4<br>🟢 | [Link](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | [View](./goals/goal3/MEDIUM/1877.minimize-maximum-pair-sum-in-array.cpp) |
