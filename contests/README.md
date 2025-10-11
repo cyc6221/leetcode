@@ -17,11 +17,11 @@
 | biweekly163 | [Link](https://leetcode.com/contest/biweekly-contest-163/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly163) | 4 |
 | biweekly165 | [Link](https://leetcode.com/contest/biweekly-contest-165/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly165) | 4 |
 | biweekly166 | [Link](https://leetcode.com/contest/biweekly-contest-166/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly166) | 4 |
-| biweekly167 | [Link](https://leetcode.com/contest/biweekly-contest-167/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly167) | 0 |
+| biweekly167 | [Link](https://leetcode.com/contest/biweekly-contest-167/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly167) | 4 |
 
 ## Note
 
-**Total C++ files tracked:** 32
+**Total C++ files tracked:** 36
 
 ## Problem List
 
@@ -58,3 +58,7 @@
 | weekly470 | 3702 | Longest Subsequence With Non Zero Bitwise Xor | 1489.5<br>🔷 | [Link](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/) | [View](./weekly470/3702.longest-subsequence-with-non-zero-bitwise-xor.cpp) |
 | weekly470 | 3703 | Remove K Balanced Substrings | 1802.0<br>🔵 | [Link](https://leetcode.com/problems/remove-k-balanced-substrings/) | [View](./weekly470/3703.remove-k-balanced-substrings.cpp) |
 | weekly470 | 3704 | Count No Zero Pairs That Sum To N | 2419.3<br>🔴 | [Link](https://leetcode.com/problems/count-no-zero-pairs-that-sum-to-n/) | [View](./weekly470/3704.count-no-zero-pairs-that-sum-to-n.cpp) |
+| biweekly167 | 3707 | Equal Score Substrings | - | [Link](https://leetcode.com/problems/equal-score-substrings/) | [View](./biweekly167/3707.equal-score-substrings.cpp) |
+| biweekly167 | 3708 | Longest Fibonacci Subarray | - | [Link](https://leetcode.com/problems/longest-fibonacci-subarray/) | [View](./biweekly167/3708.longest-fibonacci-subarray.cpp) |
+| biweekly167 | 3709 | Design Exam Scores Tracker | - | [Link](https://leetcode.com/problems/design-exam-scores-tracker/) | [View](./biweekly167/3709.design-exam-scores-tracker.cpp) |
+| biweekly167 | 3710 | Maximum Partition Factor | - | [Link](https://leetcode.com/problems/maximum-partition-factor/) | [View](./biweekly167/3710.maximum-partition-factor.cpp) |
