@@ -17,6 +17,7 @@
 | biweekly163 | [Link](https://leetcode.com/contest/biweekly-contest-163/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly163) | 4 |
 | biweekly165 | [Link](https://leetcode.com/contest/biweekly-contest-165/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly165) | 4 |
 | biweekly166 | [Link](https://leetcode.com/contest/biweekly-contest-166/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly166) | 4 |
+| biweekly167 | [Link](https://leetcode.com/contest/biweekly-contest-167/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/biweekly167) | 0 |
 
 ## Note
 
@@ -53,7 +54,7 @@
 | weekly469 | 3697 | Compute Decimal Representation | 1250.8<br>🟢 | [Link](https://leetcode.com/problems/compute-decimal-representation/) | [View](./weekly469/3697.compute-decimal-representation.cpp) |
 | weekly469 | 3698 | Split Array With Minimum Difference | 1648.8<br>🔵 | [Link](https://leetcode.com/problems/split-array-with-minimum-difference/) | [View](./weekly469/3698.split-array-with-minimum-difference.cpp) |
 | weekly469 | 3699 | Number Of Zigzag Arrays I | 2123.1<br>🟠 | [Link](https://leetcode.com/problems/number-of-zigzag-arrays-i/) | [View](./weekly469/3699.number-of-zigzag-arrays-i.cpp) |
-| weekly470 | 3701 | Compute Alternating Sum | - | [Link](https://leetcode.com/problems/compute-alternating-sum/) | [View](./weekly470/3701.compute-alternating-sum.cpp) |
-| weekly470 | 3702 | Longest Subsequence With Non Zero Bitwise Xor | - | [Link](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/) | [View](./weekly470/3702.longest-subsequence-with-non-zero-bitwise-xor.cpp) |
-| weekly470 | 3703 | Remove K Balanced Substrings | - | [Link](https://leetcode.com/problems/remove-k-balanced-substrings/) | [View](./weekly470/3703.remove-k-balanced-substrings.cpp) |
-| weekly470 | 3704 | Count No Zero Pairs That Sum To N | - | [Link](https://leetcode.com/problems/count-no-zero-pairs-that-sum-to-n/) | [View](./weekly470/3704.count-no-zero-pairs-that-sum-to-n.cpp) |
+| weekly470 | 3701 | Compute Alternating Sum | 1228.3<br>🟢 | [Link](https://leetcode.com/problems/compute-alternating-sum/) | [View](./weekly470/3701.compute-alternating-sum.cpp) |
+| weekly470 | 3702 | Longest Subsequence With Non Zero Bitwise Xor | 1489.5<br>🔷 | [Link](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/) | [View](./weekly470/3702.longest-subsequence-with-non-zero-bitwise-xor.cpp) |
+| weekly470 | 3703 | Remove K Balanced Substrings | 1802.0<br>🔵 | [Link](https://leetcode.com/problems/remove-k-balanced-substrings/) | [View](./weekly470/3703.remove-k-balanced-substrings.cpp) |
+| weekly470 | 3704 | Count No Zero Pairs That Sum To N | 2419.3<br>🔴 | [Link](https://leetcode.com/problems/count-no-zero-pairs-that-sum-to-n/) | [View](./weekly470/3704.count-no-zero-pairs-that-sum-to-n.cpp) |
