@@ -24,9 +24,9 @@ This is a 30-day LeetCode challenge.
 | Difficulty | Count |
 |------------|-------|
 | Easy🟢 | 4 |
-| Med🟡 | 10 |
+| Med🟡 | 11 |
 | Hard🔴 | 2 |
-| **Total** | 16 |
+| **Total** | 17 |
 
 <!-- LEETCODE_SUMMARY_END -->
 
@@ -37,9 +37,9 @@ This is a 30-day LeetCode challenge.
 
 [████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 40%
 
-**Med🟡**: 10 / 20
+**Med🟡**: 11 / 20
 
-[██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 50%
+[█████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░] 55%
 
 **Hard🔴**: 2 / 10
 
@@ -67,6 +67,7 @@ This is a 30-day LeetCode challenge.
 | 3676 | Count Bowl Subarrays | Med🟡 | 1847.5<br>🔵 | [Link](https://leetcode.com/problems/count-bowl-subarrays/) | [View](./goals/goal3/MEDIUM/3676.count-bowl-subarrays.cpp) |
 | 3685 | Subsequence Sum After Capping Elements | Med🟡 | 2073.4<br>🟣 | [Link](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | [View](./goals/goal3/MEDIUM/3685.subsequence-sum-after-capping-elements.cpp) |
 | 3691 | Maximum Total Subarray Value Ii | Hard🔴 | 2469.0<br>🔴 | [Link](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | [View](./goals/goal3/HARD/3691.maximum-total-subarray-value-ii.cpp) |
+| 3714 | Longest Balanced Substring Ii | Med🟡 | - | [Link](https://leetcode.com/problems/longest-balanced-substring-ii/) | [View](./goals/goal3/MEDIUM/3714.longest-balanced-substring-ii.cpp) |
 
 <!-- LEETCODE_TABLE_END -->
 
