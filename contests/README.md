@@ -9,6 +9,7 @@
 | weekly468 | [Link](https://leetcode.com/contest/weekly-contest-468/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly468) | 4 |
 | weekly469 | [Link](https://leetcode.com/contest/weekly-contest-469/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly469) | 4 |
 | weekly470 | [Link](https://leetcode.com/contest/weekly-contest-470/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly470) | 4 |
+| weekly471 | [Link](https://leetcode.com/contest/weekly-contest-471/) | [Repo](https://github.com/cyc6221/leetcode/tree/main/contests/weekly471) | 4 |
 
 ## Biweekly
 
@@ -21,7 +22,7 @@
 
 ## Note
 
-**Total C++ files tracked:** 36
+**Total C++ files tracked:** 40
 
 ## Problem List
 
@@ -62,3 +63,7 @@
 | biweekly167 | 3708 | Longest Fibonacci Subarray | - | [Link](https://leetcode.com/problems/longest-fibonacci-subarray/) | [View](./biweekly167/3708.longest-fibonacci-subarray.cpp) |
 | biweekly167 | 3709 | Design Exam Scores Tracker | - | [Link](https://leetcode.com/problems/design-exam-scores-tracker/) | [View](./biweekly167/3709.design-exam-scores-tracker.cpp) |
 | biweekly167 | 3710 | Maximum Partition Factor | - | [Link](https://leetcode.com/problems/maximum-partition-factor/) | [View](./biweekly167/3710.maximum-partition-factor.cpp) |
+| weekly471 | 3712 | Sum Of Elements With Frequency Divisible By K | - | [Link](https://leetcode.com/problems/sum-of-elements-with-frequency-divisible-by-k/) | [View](./weekly471/3712.sum-of-elements-with-frequency-divisible-by-k.cpp) |
+| weekly471 | 3713 | Longest Balanced Substring I | - | [Link](https://leetcode.com/problems/longest-balanced-substring-i/) | [View](./weekly471/3713.longest-balanced-substring-i.cpp) |
+| weekly471 | 3714 | Longest Balanced Substring Ii | - | [Link](https://leetcode.com/problems/longest-balanced-substring-ii/) | [View](./weekly471/3714.longest-balanced-substring-ii.cpp) |
+| weekly471 | 3715 | Sum Of Perfect Square Ancestors | - | [Link](https://leetcode.com/problems/sum-of-perfect-square-ancestors/) | [View](./weekly471/3715.sum-of-perfect-square-ancestors.cpp) |
