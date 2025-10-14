@@ -12,7 +12,7 @@ This repository contains my personal solutions to problems on [LeetCode](https:/
 
 This is a 30-day LeetCode challenge.
 
-- **Duration**: 2025-10-13 to 2025-11-11
+- **Duration**: 2025-10-13 to 2025-11-12
 - **Goal**:
   - Solve **1 Easy** problems
   - Solve **10 Medium** problems
