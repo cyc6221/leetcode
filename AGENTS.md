@@ -41,13 +41,23 @@ Run commands from the repository root.
 ```bash
 python -m scripts.cli update-problems
 python -m scripts.cli update-contests
+python -m scripts.cli update-site
 python -m scripts.cli all
 ```
 
 - `update-problems` updates `problems/README.md` and the root `README.md`.
 - `update-contests` updates contest READMEs and `contests/README.md`.
-- `all` runs both.
+- `update-site` updates the generated GitHub Pages data in `docs/assets/data.js`.
+- `all` runs problem, contest, and site updates.
 - Rating data is fetched from `zerotrac/leetcode_problem_rating`.
+
+## Website Rules
+
+- The GitHub Pages app lives in `docs/`.
+- Keep the site as a lightweight static table app; avoid adding frontend build tooling unless the user asks.
+- For UI-only site changes, edit `docs/index.html`, `docs/assets/app.js`, and `docs/assets/styles.css` directly.
+- Regenerate site data with `python -m scripts.cli update-site` only when repository data changes.
+- Preview locally with `python -m http.server 8000 -d docs`.
 
 ## Adding Problems
 
@@ -65,6 +75,9 @@ python -m scripts.cli all
   - problem file moves or additions,
   - generated README/index changes,
   - site/docs changes.
+- Split workflow documentation changes, such as `AGENTS.md`, from implementation commits unless the user explicitly wants a single housekeeping commit.
+- Split generated outputs from the code changes that update the generator when that makes the review clearer.
+- UI-only site changes in `docs/` may share one commit when they are part of the same visible polish pass.
 - Do not use `git add -A` unless the whole worktree is intentionally in scope.
 - Stage explicit paths when untracked or unrelated files exist.
 - Do not commit local experiments, generated site files, or untracked work unless the user explicitly asks.
@@ -84,6 +97,7 @@ Use the checks that fit the change:
 ```bash
 python -m py_compile scripts/*.py
 python -m scripts.cli all
+node --check docs/assets/app.js
 git diff --check
 ```
 
