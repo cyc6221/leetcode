@@ -1,39 +1,40 @@
 # CLI Usage
 
-This project includes Python scripts to maintain and update README files.
+This project includes Python scripts to maintain README indexes.
 
 ## Commands
 
-### Update a single goal README
+### Migrate legacy goals
 
-Updates the `goals/<goal>/README.md` blocks (Progress / Summary / Table).
-
-```bash
-python -m scripts.cli update goal-2
-python -m scripts.cli update latest
-```
-
-### Sync to root README
-
-Copies the specified goal (default: latest) README content to the root `README.md`.
+Moves `goals/**/*.cpp` into `problems/<rating-range>/` and removes `goals/`.
 
 ```bash
-python -m scripts.cli sync
-python -m scripts.cli sync goal-1
+python -m scripts.cli migrate-goals
 ```
 
-### Update + Sync (most common)
+### Update problem indexes
 
-Updates the latest goal README and syncs it to the root README.
+Updates `problems/README.md` and the root `README.md`.
+
+```bash
+python -m scripts.cli update-problems
+```
+
+### Update contest indexes
+
+Updates every contest README and `contests/README.md`.
+
+```bash
+python -m scripts.cli update-contests
+```
+
+### Update all indexes
 
 ```bash
 python -m scripts.cli all
 ```
 
----
-
 ## Notes
 
-* Run commands from the **repository root**.
-* `latest` always points to the most recent goal folder.
-* Recommended default: `python -m scripts.cli all`
+* Run commands from the repository root.
+* Rating data comes from `zerotrac/leetcode_problem_rating`.

@@ -1,94 +1,40 @@
 import argparse
-from .goals import find_latest_goal, update_goal_readme, sync_root_readme, update_and_sync_latest
+
 from .contests import update_all_contests
+from .problems import migrate_goals_to_problems, update_problem_docs
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(
-        description="CLI to update goal READMEs and sync a goal README to the repository root.",
+        description="Maintain LeetCode solution indexes.",
         epilog=(
             "Examples:\n"
-            "  python -m scripts.cli update goal-2   # Update goals/goal-2/README.md\n"
-            "  python -m scripts.cli update latest   # Update latest goal README\n"
-            "  python -m scripts.cli sync            # Copy latest goal README to root README.md\n"
-            "  python -m scripts.cli sync goal-1     # Copy goal-1 README to root README.md\n"
-            "  python -m scripts.cli all             # Update latest goal and sync it to root\n"
+            "  python -m scripts.cli migrate-goals\n"
+            "  python -m scripts.cli update-problems\n"
+            "  python -m scripts.cli update-contests\n"
+            "  python -m scripts.cli all\n"
         ),
         formatter_class=argparse.RawTextHelpFormatter,
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    ### === Goal === ###
-    # update
-    p_update = subparsers.add_parser(
-        "update",
-        help="Update the README blocks (Progress/Summary/Table) for a specific goal.",
-    )
-    p_update.add_argument(
-        "goal",
-        help="Goal folder name (e.g., goal-1, goal-2) or 'latest'.",
-    )
-
-    # sync
-    p_sync = subparsers.add_parser(
-        "sync",
-        help="Copy the specified goal (default: latest) README to the repository root README.md.",
-    )
-    p_sync.add_argument(
-        "goal",
-        nargs="?",
-        default="latest",
-        help="Goal folder name (e.g., goal-1, goal-2). Defaults to 'latest'.",
-    )
-
-    # all
-    subparsers.add_parser(
-        "all",
-        help="Update the latest goal README and sync it to the root README.md.",
-    )
-
-    ### === Contest === ###
-    subparsers.add_parser(
-        "update-contests",
-        help="Update all contest READMEs and index",
-    )
-    # p_uc = subparsers.add_parser(
-    #     "update-contests", 
-    #     help="Update all contest READMEs and index"
-    # )
-    # p_uc.add_argument(
-    #     "--repo-root", 
-    #     default=".", 
-    #     help="Repo root (default: .)"
-    # )
-    # p_uc.add_argument(
-    #     "--contest-rel", 
-    #     default="contests", 
-    #     help="Contest folder relative to repo root"
-    # )
-
+    subparsers.add_parser("migrate-goals", help="Move legacy goals/*.cpp files into problems/ rating buckets.")
+    subparsers.add_parser("update-problems", help="Update problems/README.md and the root README.md.")
+    subparsers.add_parser("update-contests", help="Update all contest README files and contests/README.md.")
+    subparsers.add_parser("all", help="Update problem and contest README files.")
 
     args = parser.parse_args()
 
-    if args.command == "update":
-        goal = args.goal if args.goal != "latest" else find_latest_goal()
-        update_goal_readme(goal)
-
-    elif args.command == "sync":
-        goal = args.goal if args.goal != "latest" else find_latest_goal()
-        sync_root_readme(goal)
-
-    elif args.command == "all":
-        update_and_sync_latest()
-
+    if args.command == "migrate-goals":
+        migrate_goals_to_problems()
+        update_problem_docs()
+    elif args.command == "update-problems":
+        update_problem_docs()
     elif args.command == "update-contests":
         update_all_contests()
-        # res = update_all_contests(repo_root=args.repo_root, contest_rel=args.contest_rel)
-        # for path, n in res["updated_contests"]:
-        #     print(f"[contest] {path} -> {n} C++ files")
-        # print(f"[contest] total C++ files tracked: {res['total_problems']}")
-
-
+    elif args.command == "all":
+        update_problem_docs()
+        update_all_contests()
 
 
 if __name__ == "__main__":
