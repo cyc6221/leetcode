@@ -107,6 +107,7 @@ def sync_root_readme() -> None:
             "python -m scripts.cli all",
             "python -m scripts.cli update-problems",
             "python -m scripts.cli update-contests",
+            "python -m scripts.cli update-site",
             "```",
             "",
             PROBLEM_SUMMARY_START,

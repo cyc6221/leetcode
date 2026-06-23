@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LeetCode IO</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>LeetCode IO</h1>
+        <p class="muted">Personal solution index with ratings, contests, search, sorting, and code reveal.</p>
+      </div>
+      <nav class="tabs" aria-label="Views">
+        <button class="tab is-active" type="button" data-view="problems">Problems</button>
+        <button class="tab" type="button" data-view="contests">Contests</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="stats" aria-label="Repository stats">
+        <div class="stat">
+          <span class="stat-label">Solved</span>
+          <strong id="stat-problems">0</strong>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Rated</span>
+          <strong id="stat-rated">0</strong>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Contests</span>
+          <strong id="stat-contests">0</strong>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Contest Code</span>
+          <strong id="stat-contest-code">0</strong>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Table controls">
+        <label class="search-field">
+          <span>Search</span>
+          <input id="search" type="search" autocomplete="off" placeholder="ID, title, contest, tier">
+        </label>
+        <label class="select-field" data-control="tier">
+          <span>Tier</span>
+          <select id="tier-filter">
+            <option value="all">All tiers</option>
+          </select>
+        </label>
+        <label class="select-field" data-control="contest-type" hidden>
+          <span>Contest</span>
+          <select id="contest-filter">
+            <option value="all">All contests</option>
+            <option value="weekly">Weekly</option>
+            <option value="biweekly">Biweekly</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="table-shell" aria-live="polite">
+        <div class="table-meta">
+          <span id="result-count">0 rows</span>
+          <span id="updated-at"></span>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead id="table-head"></thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/data.js"></script>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
