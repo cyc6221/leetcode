@@ -88,6 +88,8 @@ python -m scripts.cli all
 
 - Keep `main` as the primary branch.
 - Clean local and remote temporary branches when they are no longer needed.
+- After a PR is closed by merging, whether with a merge commit or squash merge, immediately delete the PR branch locally and remotely.
+- Do the cleanup in the same workflow after confirming `main` contains the merge result.
 - Never delete `main` or `origin/main`.
 - After remote branch cleanup, run `git fetch origin --prune`.
 
