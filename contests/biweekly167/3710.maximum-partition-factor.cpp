@@ -32,14 +32,14 @@ public:
         }
         return true;
     }
-    
+
     int maxPartitionFactor(vector<vector<int>>& p) {
         int n = p.size();
         if(n == 2) return 0;
-        
+
         vector<vector<long long>> d(n, vector<long long>(n, 0));
         set<long long> L;
-        
+
         for(int i=0; i<n; i++) {
             for(int j=i+1; j<n; j++) {
                 d[i][j] = llabs((long long)p[i][0] - p[j][0]) +  llabs((long long)p[i][1] - p[j][1]);

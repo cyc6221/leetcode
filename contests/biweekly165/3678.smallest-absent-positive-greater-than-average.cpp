@@ -10,9 +10,9 @@ public:
         }
         int avg = sum / nums.size();
         int i = (nums[0] < 1) ? 1 : nums[0];
-        // cout << sum << endl;
+
         while(sum > 0 && i <= avg) i++;
-        // cout << i << endl;
+
         while(s.count(i)) i++;
         return i;
     }

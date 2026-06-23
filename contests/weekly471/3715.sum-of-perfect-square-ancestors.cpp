@@ -25,13 +25,13 @@ public:
         int key = S(nums[cur]);
         res += freq[key];
         freq[key]++;
-        
+
         for(auto& b : adj[cur]) {
             if(b != cur) dfs(adj, nums, vis, b);
         }
         freq[key]--;
     }
-    
+
     long long sumOfAncestors(int n, vector<vector<int>>& edges, vector<int>& nums) {
         res = 0;
         N = n;

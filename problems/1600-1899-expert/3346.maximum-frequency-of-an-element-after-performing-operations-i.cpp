@@ -13,7 +13,7 @@ public:
             for(auto& i : mp) res = max(res, i.second);
             return res;
         }
-        
+
         int cur = 0;
         for(int i=vt[0]-1; i<=vt[0]-1+k; i++) {
             cur += mp[i];

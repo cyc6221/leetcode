@@ -24,7 +24,7 @@ public:
                 ans = min(ans, llabs(right - left));
             }
         }
-        
+
         return (ans == LLONG_MAX) ? -1 : ans;
     }
 };

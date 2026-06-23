@@ -14,7 +14,7 @@ public:
 
             g1[i] %= mod, g2[i] %= mod;
         }
-        
+
         for(int i=0; i<n; ) {
             char c = k[i];
             int cur = 0;
@@ -23,8 +23,6 @@ public:
                 i++;
             }
 
-            // if(c == '7' || c == '9') res = res * g2[cur];
-            // else res = res * g1[cur];
             res = (c == '7' || c == '9') ? res * g2[cur] : res * g1[cur];
             res %= mod;
         }

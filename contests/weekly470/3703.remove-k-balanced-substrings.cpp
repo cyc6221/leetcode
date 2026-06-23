@@ -16,13 +16,13 @@ public:
                    runs[runs.size()-1].first == ')' &&
                    runs[runs.size()-2].second >= k &&
                    runs[runs.size()-1].second >= k) {
-    
+
                 runs[runs.size()-2].second -= k;
                 runs[runs.size()-1].second -= k;
-    
+
                 if (runs.back().second == 0) runs.pop_back();
                 if (!runs.empty() && runs.back().second == 0) runs.pop_back();
-    
+
                 try_merge_last_two();
             }
         };

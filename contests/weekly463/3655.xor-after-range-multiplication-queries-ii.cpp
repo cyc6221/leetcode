@@ -9,10 +9,7 @@ public:
             long long k = q[i][2];
             long long v = q[i][3];
             while(l <= r) {
-                // long long temp = nums[l];
-                // temp *= v;
-                // temp %= 1000000007;
-                // nums[l] = temp;
+
                 mp[l].insert(v);
                 l += k;
             }
@@ -27,7 +24,7 @@ public:
                     temp %= 1000000007;
                 }
             }
-            // cout << temp << endl;
+
             temp = temp * nums[l];
             temp %= 1000000007;
             nums[l] = temp;
@@ -36,5 +33,3 @@ public:
         return res;
     }
 };
-
-// NOT FINISHED

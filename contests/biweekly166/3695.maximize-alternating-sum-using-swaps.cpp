@@ -17,7 +17,7 @@ public:
         p[b] = a;
         if(r[a] == r[b]) r[a]++;
     }
-    
+
     long long maxAlternatingSum(vector<int>& nums, vector<vector<int>>& swaps) {
         int n = nums.size();
         p.resize(n);
