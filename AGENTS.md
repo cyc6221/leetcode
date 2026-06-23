@@ -75,6 +75,9 @@ python -m scripts.cli all
   - problem file moves or additions,
   - generated README/index changes,
   - site/docs changes.
+- Split workflow documentation changes, such as `AGENTS.md`, from implementation commits unless the user explicitly wants a single housekeeping commit.
+- Split generated outputs from the code changes that update the generator when that makes the review clearer.
+- UI-only site changes in `docs/` may share one commit when they are part of the same visible polish pass.
 - Do not use `git add -A` unless the whole worktree is intentionally in scope.
 - Stage explicit paths when untracked or unrelated files exist.
 - Do not commit local experiments, generated site files, or untracked work unless the user explicitly asks.
