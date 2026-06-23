@@ -59,106 +59,8 @@
     ],
   };
 
-  const cppKeywords = new Set([
-    "alignas",
-    "alignof",
-    "and",
-    "and_eq",
-    "asm",
-    "auto",
-    "bitand",
-    "bitor",
-    "bool",
-    "break",
-    "case",
-    "catch",
-    "char",
-    "char16_t",
-    "char32_t",
-    "class",
-    "compl",
-    "concept",
-    "const",
-    "constexpr",
-    "const_cast",
-    "continue",
-    "decltype",
-    "default",
-    "delete",
-    "do",
-    "double",
-    "dynamic_cast",
-    "else",
-    "enum",
-    "explicit",
-    "export",
-    "extern",
-    "false",
-    "float",
-    "for",
-    "friend",
-    "goto",
-    "if",
-    "inline",
-    "int",
-    "long",
-    "mutable",
-    "namespace",
-    "new",
-    "noexcept",
-    "not",
-    "not_eq",
-    "nullptr",
-    "operator",
-    "or",
-    "or_eq",
-    "private",
-    "protected",
-    "public",
-    "register",
-    "reinterpret_cast",
-    "requires",
-    "return",
-    "short",
-    "signed",
-    "sizeof",
-    "static",
-    "static_assert",
-    "static_cast",
-    "struct",
-    "switch",
-    "template",
-    "this",
-    "thread_local",
-    "throw",
-    "true",
-    "try",
-    "typedef",
-    "typeid",
-    "typename",
-    "union",
-    "unsigned",
-    "using",
-    "virtual",
-    "void",
-    "volatile",
-    "wchar_t",
-    "while",
-    "xor",
-    "xor_eq",
-  ]);
-
-  const cppTokenPattern =
-    /\/\*[\s\S]*?\*\/|\/\/[^\n]*|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|^\s*#[^\n]*|\b(?:0x[\da-fA-F]+|\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)(?:[uUlLfF]+)?\b|\b[a-zA-Z_]\w*\b/gm;
-
-  function escapeHtml(value) {
-    return String(value)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
-  }
+  const escapeHtml = window.CodeTools.escapeHtml;
+  const highlightCode = window.CodeTools.highlightCode;
 
   function normalize(value) {
     return String(value || "").toLowerCase();
@@ -200,42 +102,6 @@
         item.contestType,
       ].join(" ")
     );
-  }
-
-  function highlightCode(code) {
-    let output = "";
-    let lastIndex = 0;
-    const source = String(code || "");
-
-    source.replace(cppTokenPattern, (token, offset) => {
-      output += escapeHtml(source.slice(lastIndex, offset));
-      output += highlightToken(token);
-      lastIndex = offset + token.length;
-      return token;
-    });
-
-    output += escapeHtml(source.slice(lastIndex));
-    return output;
-  }
-
-  function highlightToken(token) {
-    const trimmed = token.trimStart();
-    let tokenClass = "";
-
-    if (token.startsWith("//") || token.startsWith("/*")) {
-      tokenClass = "code-comment";
-    } else if (token.startsWith('"') || token.startsWith("'")) {
-      tokenClass = "code-string";
-    } else if (trimmed.startsWith("#")) {
-      tokenClass = "code-preprocessor";
-    } else if (/^(?:0x[\da-fA-F]+|\d)/.test(token)) {
-      tokenClass = "code-number";
-    } else if (cppKeywords.has(token)) {
-      tokenClass = "code-keyword";
-    }
-
-    const escaped = escapeHtml(token);
-    return tokenClass ? `<span class="${tokenClass}">${escaped}</span>` : escaped;
   }
 
   function filterRows(rows) {
@@ -305,6 +171,22 @@
     return `pill contest contest-${type} contest-tone-${tone}`;
   }
 
+  function codeViewUrl(item) {
+    const params = new URLSearchParams({ key: item.key });
+    return `./code.html?${params.toString()}`;
+  }
+
+  function scrollRowToTop(key) {
+    window.requestAnimationFrame(() => {
+      const row = Array.from(els.body.querySelectorAll(".data-row")).find(
+        (candidate) => candidate.dataset.rowKey === key
+      );
+      if (row) {
+        row.scrollIntoView({ block: "start", behavior: "smooth" });
+      }
+    });
+  }
+
   function renderHead() {
     const cells = columnSets[state.view]
       .map(([key, label]) => {
@@ -328,8 +210,9 @@
         <a class="button" href="${escapeHtml(item.leetcodeUrl)}" target="_blank" rel="noreferrer">LC</a>
         ${contestLink}
         <a class="button" href="${escapeHtml(item.githubUrl)}" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="button" href="${escapeHtml(codeViewUrl(item))}" target="_blank" rel="noreferrer">Full</a>
         <button class="button primary" type="button" data-toggle-code="${escapeHtml(item.key)}">
-          ${isOpen ? "Hide" : "Code"}
+          ${isOpen ? "Hide" : "Preview"}
         </button>
       </div>
     `;
@@ -338,7 +221,7 @@
   function problemRow(item) {
     const open = state.openKey === item.key ? " is-open" : "";
     return `
-      <tr class="${open}">
+      <tr class="data-row${open}" data-row-key="${escapeHtml(item.key)}">
         <td class="num">${escapeHtml(item.ratingLabel)}</td>
         <td><span class="${tierClass(item)}">${escapeHtml(item.tier)}</span></td>
         <td class="num">${escapeHtml(item.qid)}</td>
@@ -352,7 +235,7 @@
   function contestRow(item) {
     const open = state.openKey === item.key ? " is-open" : "";
     return `
-      <tr class="${open}">
+      <tr class="data-row${open}" data-row-key="${escapeHtml(item.key)}">
         <td><span class="${contestClass(item)}">${escapeHtml(contestLabel(item))}</span></td>
         <td class="num">${escapeHtml(item.ratingLabel)}</td>
         <td class="num">${escapeHtml(item.qid)}</td>
@@ -508,8 +391,12 @@
       const toggle = event.target.closest("[data-toggle-code]");
       if (toggle) {
         const key = toggle.dataset.toggleCode;
-        state.openKey = state.openKey === key ? null : key;
+        const shouldOpen = state.openKey !== key;
+        state.openKey = shouldOpen ? key : null;
         renderRows();
+        if (shouldOpen) {
+          scrollRowToTop(key);
+        }
         return;
       }
 
