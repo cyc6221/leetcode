@@ -7,7 +7,7 @@ public:
             g[u].push_back({v, w});
             g[v].push_back({u, 2 * w});
         }
-        
+
         const long long INF = (1LL<<62);
         vector<long long> dist(n, INF);
         priority_queue<pair<long long,int>, vector<pair<long long,int>>, greater<pair<long long,int>>> pq;
@@ -18,7 +18,7 @@ public:
         while (!pq.empty()) {
             auto [d, u] = pq.top();
             pq.pop();
-            
+
             if (d != dist[u]) continue;
             if (u == n - 1) break;
 

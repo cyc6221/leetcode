@@ -1,5 +1,3 @@
-// UPSOLVING
-
 class Solution {
 public:
     int double_chars(string s, char x, char y) {
@@ -32,7 +30,6 @@ public:
         int res = 0;
         int n = s.size();
 
-        // single char
         char ch = s[0];
         for(int i=0, cur=0; i<n; i++) {
             if(s[i] == ch) {
@@ -45,12 +42,10 @@ public:
             res = max(res, cur);
         }
 
-        // double chars
         res = max(res, double_chars(s, 'a', 'b'));
         res = max(res, double_chars(s, 'b', 'c'));
         res = max(res, double_chars(s, 'a', 'c'));
 
-        // triple chars
         int a=0, b=0, c=0;
         map<pair<int, int>, int> mp;
         mp[{0,0}] = -1;

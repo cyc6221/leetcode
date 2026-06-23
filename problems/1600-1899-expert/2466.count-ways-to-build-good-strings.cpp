@@ -16,21 +16,6 @@ public:
             }
         }
         return res;
-        
-        // vector<long long> arr(high+1, 0);
 
-        // for(int i=min(zero, one); i<=high; i++) {
-        //     if(i == zero) arr[i] += 1;
-        //     if(i == one) arr[i] += 1;
-
-        //     if(i-zero > 0) arr[i] = (arr[i] + arr[i-zero]);
-        //     if(i-one > 0) arr[i] = (arr[i] + arr[i-one]);
-        //     arr[i] %= mod;
-
-        //     if(i >= low) res = (res + arr[i]);
-        //     res %= mod;
-        // }
-
-        // return res;
     }
 };

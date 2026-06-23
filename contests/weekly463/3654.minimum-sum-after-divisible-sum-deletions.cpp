@@ -42,5 +42,3 @@ public:
         return total - removed;
     }
 };
-
-// NOT FINISHED

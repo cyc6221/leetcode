@@ -7,7 +7,7 @@ public:
             if(i == 0) res++;
             else pos.push_back(abs(i));
         }
-        
+
         res = res * (res - 1) / 2;
         sort(pos.begin(), pos.end());
 

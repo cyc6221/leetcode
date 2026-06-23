@@ -1,8 +1,8 @@
 struct RMQ {
     int n, LOG;
-    vector<int> lg;                 // floor(log2(i))
-    vector<vector<int>> stMax;      // stMax[k][i] = max on [i, i+2^k-1]
-    vector<vector<int>> stMin;      // stMin[k][i] = min on [i, i+2^k-1]
+    vector<int> lg;
+    vector<vector<int>> stMax;
+    vector<vector<int>> stMin;
 
     RMQ() {}
     RMQ(const vector<int>& a) { build(a); }
@@ -17,12 +17,12 @@ struct RMQ {
 
         stMax.assign(LOG, vector<int>(n));
         stMin.assign(LOG, vector<int>(n));
-        // k = 0
+
         for (int i = 0; i < n; ++i) {
             stMax[0][i] = a[i];
             stMin[0][i] = a[i];
         }
-        // k > 0
+
         for (int k = 1; k < LOG; ++k) {
             int len = 1 << k;
             int half = len >> 1;
@@ -43,7 +43,7 @@ struct RMQ {
         int k = lg[r - l + 1];
         return std::min(stMin[k][l], stMin[k][r - (1 << k) + 1]);
     }
-    inline int value(int l, int r) const { // v(l,r) = max - min
+    inline int value(int l, int r) const {
         return rangeMax(l, r) - rangeMin(l, r);
     }
 };
@@ -54,9 +54,7 @@ public:
         int n = (int)nums.size();
         RMQ rmq(nums);
 
-        // 對每個固定 l，序列 v(l, r)（r 往左移）為非增
-        // 初始化將 (l, r = n-1) 放入最大堆
-        using Node = pair<int, pair<int,int>>; // (value, (l, r))
+        using Node = pair<int, pair<int,int>>;
         priority_queue<Node> pq;
         pq = priority_queue<Node>();
 
@@ -72,7 +70,6 @@ public:
             int l = lr.first, r = lr.second;
             ans += (long long)val;
 
-            // 往同一 row 的下一個（r-1）推進
             if (r > l) {
                 int nr = r - 1;
                 int nv = rmq.value(l, nr);

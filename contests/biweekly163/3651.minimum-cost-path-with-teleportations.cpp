@@ -5,8 +5,5 @@ public:
 
         int m = g.size(), n = g[0].size();
 
-        
     }
 };
-
-// NOT FINISHED

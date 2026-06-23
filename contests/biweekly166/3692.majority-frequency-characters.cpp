@@ -8,7 +8,7 @@ public:
         for(int i=0; i<s.size(); i++) {
             arr[s[i] - 'a']++;
         }
-        
+
         unordered_map<char, int> mp;
         for(int i=0; i<26; i++) {
             if (arr[i] > 0) mp[arr[i]]++;

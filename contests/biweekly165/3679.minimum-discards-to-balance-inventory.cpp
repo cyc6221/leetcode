@@ -9,14 +9,13 @@ public:
                 mp[arrivals[i-w]]--;
             }
             mp[arrivals[i]]++;
-            // cout << mp[3] << endl;
-            // if(i >= w) {
+
             if(mp[arrivals[i]] > m) {
                 mp[arrivals[i]]--;
                 res++;
                 kpt[i] = 0;
             }
-            // }
+
         }
         return res;
     }

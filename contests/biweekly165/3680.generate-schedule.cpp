@@ -30,7 +30,6 @@ public:
                 all.push_back({i, j, 0});
             }
         }
-        // cout << all.size() << endl;
 
         vector<vector<int>> gm(all.size(), vector<int>(2, -1));
         gm[0] = {all[0][0], all[0][1]};
