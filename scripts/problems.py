@@ -96,6 +96,11 @@ def sync_root_readme() -> None:
             "- `contests/`: contest archive grouped by weekly or biweekly contest.",
             "- `codebook/`: reusable algorithm notes and snippets.",
             "",
+            "## Lists",
+            "",
+            "- [Problem list by rating](./problems/)",
+            "- [Contest archive](./contests/)",
+            "",
             "## Commands",
             "",
             "```bash",
@@ -107,10 +112,6 @@ def sync_root_readme() -> None:
             PROBLEM_SUMMARY_START,
             generate_problem_summary(),
             PROBLEM_SUMMARY_END,
-            "",
-            PROBLEM_TABLE_START,
-            generate_problem_table(REPO_ROOT),
-            PROBLEM_TABLE_END,
             "",
         ]
     )
