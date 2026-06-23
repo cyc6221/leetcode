@@ -19,6 +19,7 @@ Personal LeetCode solutions written in C++.
 python -m scripts.cli all
 python -m scripts.cli update-problems
 python -m scripts.cli update-contests
+python -m scripts.cli update-site
 ```
 
 <!-- LEETCODE_PROBLEM_SUMMARY_START -->

@@ -2,6 +2,7 @@ import argparse
 
 from .contests import update_all_contests
 from .problems import migrate_goals_to_problems, update_problem_docs
+from .site import update_site
 
 
 def main() -> None:
@@ -12,6 +13,7 @@ def main() -> None:
             "  python -m scripts.cli migrate-goals\n"
             "  python -m scripts.cli update-problems\n"
             "  python -m scripts.cli update-contests\n"
+            "  python -m scripts.cli update-site\n"
             "  python -m scripts.cli all\n"
         ),
         formatter_class=argparse.RawTextHelpFormatter,
@@ -21,7 +23,8 @@ def main() -> None:
     subparsers.add_parser("migrate-goals", help="Move legacy goals/*.cpp files into problems/ rating buckets.")
     subparsers.add_parser("update-problems", help="Update problems/README.md and the root README.md.")
     subparsers.add_parser("update-contests", help="Update all contest README files and contests/README.md.")
-    subparsers.add_parser("all", help="Update problem and contest README files.")
+    subparsers.add_parser("update-site", help="Update the GitHub Pages static site data in docs/.")
+    subparsers.add_parser("all", help="Update problem, contest, and static site files.")
 
     args = parser.parse_args()
 
@@ -32,9 +35,12 @@ def main() -> None:
         update_problem_docs()
     elif args.command == "update-contests":
         update_all_contests()
+    elif args.command == "update-site":
+        update_site()
     elif args.command == "all":
         update_problem_docs()
         update_all_contests()
+        update_site()
 
 
 if __name__ == "__main__":

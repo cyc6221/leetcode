@@ -28,6 +28,14 @@ Updates every contest README and `contests/README.md`.
 python -m scripts.cli update-contests
 ```
 
+### Update static site
+
+Updates the generated data used by the GitHub Pages app in `docs/`.
+
+```bash
+python -m scripts.cli update-site
+```
+
 ### Update all indexes
 
 ```bash
