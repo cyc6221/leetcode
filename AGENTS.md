@@ -55,7 +55,8 @@ python -m scripts.cli all
 
 - The GitHub Pages app lives in `docs/`.
 - Keep the site as a lightweight static table app; avoid adding frontend build tooling unless the user asks.
-- For UI-only site changes, edit `docs/index.html`, `docs/assets/app.js`, and `docs/assets/styles.css` directly.
+- For table UI-only site changes, edit `docs/index.html`, `docs/assets/app.js`, and `docs/assets/styles.css` directly.
+- For full code view changes, keep `docs/code.html`, `docs/assets/code.js`, and `docs/assets/highlight.js` in sync with the table preview behavior.
 - Regenerate site data with `python -m scripts.cli update-site` only when repository data changes.
 - Preview locally with `python -m http.server 8000 -d docs`.
 
