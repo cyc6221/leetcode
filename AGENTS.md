@@ -41,13 +41,23 @@ Run commands from the repository root.
 ```bash
 python -m scripts.cli update-problems
 python -m scripts.cli update-contests
+python -m scripts.cli update-site
 python -m scripts.cli all
 ```
 
 - `update-problems` updates `problems/README.md` and the root `README.md`.
 - `update-contests` updates contest READMEs and `contests/README.md`.
-- `all` runs both.
+- `update-site` updates the generated GitHub Pages data in `docs/assets/data.js`.
+- `all` runs problem, contest, and site updates.
 - Rating data is fetched from `zerotrac/leetcode_problem_rating`.
+
+## Website Rules
+
+- The GitHub Pages app lives in `docs/`.
+- Keep the site as a lightweight static table app; avoid adding frontend build tooling unless the user asks.
+- For UI-only site changes, edit `docs/index.html`, `docs/assets/app.js`, and `docs/assets/styles.css` directly.
+- Regenerate site data with `python -m scripts.cli update-site` only when repository data changes.
+- Preview locally with `python -m http.server 8000 -d docs`.
 
 ## Adding Problems
 
@@ -84,6 +94,7 @@ Use the checks that fit the change:
 ```bash
 python -m py_compile scripts/*.py
 python -m scripts.cli all
+node --check docs/assets/app.js
 git diff --check
 ```
 
