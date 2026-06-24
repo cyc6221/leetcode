@@ -1,12 +1,9 @@
 # weekly467
 
-<!-- LEETCODE_TABLE_START -->
-## Problem List
+Contest solution files live in this folder.
 
-| ID | Title | Rating | Link | Code |
-|:--:|-------|:------:|:----:|:----:|
-| 3683 | Earliest Time To Finish One Task | 1198.8 | [Link](https://leetcode.com/problems/earliest-time-to-finish-one-task/) | [View](./3683.earliest-time-to-finish-one-task.cpp) |
-| 3684 | Maximize Sum Of At Most K Distinct Elements | 1298.8 | [Link](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [View](./3684.maximize-sum-of-at-most-k-distinct-elements.cpp) |
-| 3685 | Subsequence Sum After Capping Elements | 2073.4 | [Link](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | [View](./3685.subsequence-sum-after-capping-elements.cpp) |
-| 3686 | Number Of Stable Subsequences | 1969.3 | [Link](https://leetcode.com/problems/number-of-stable-subsequences/) | [View](./3686.number-of-stable-subsequences.cpp) |
-<!-- LEETCODE_TABLE_END -->
+Browse this contest on the site: https://cyc6221.github.io/leetcode/#/contests
+
+LeetCode contest page: https://leetcode.com/contest/weekly-contest-467/
+
+The generated problem table that used to live here has moved to the site.

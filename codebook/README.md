@@ -1,14 +1,7 @@
-# Codebook Index
+# Codebook
 
-## DS/
-- [BST.cpp](./DS/BST.cpp)
-- [RMQ.cpp](./DS/RMQ.cpp)
-- [UnionFind.cpp](./DS/UnionFind.cpp)
+Reusable algorithm notes and snippets live in this folder.
 
-## math/
-- [base_conversion.cpp](./math/base_conversion.cpp)
-- [base_to_int.cpp](./math/base_to_int.cpp)
+Browse and preview snippets on the site: https://cyc6221.github.io/leetcode/#/codebook
 
-## number_theory/
-- [prime_sieve.cpp](./number_theory/prime_sieve.cpp)
-
+The generated snippet list that used to live here has moved to the site.

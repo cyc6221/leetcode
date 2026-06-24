@@ -1,12 +1,9 @@
 # biweekly167
 
-<!-- LEETCODE_TABLE_START -->
-## Problem List
+Contest solution files live in this folder.
 
-| ID | Title | Rating | Link | Code |
-|:--:|-------|:------:|:----:|:----:|
-| 3707 | Equal Score Substrings | 1262.4 | [Link](https://leetcode.com/problems/equal-score-substrings/) | [View](./3707.equal-score-substrings.cpp) |
-| 3708 | Longest Fibonacci Subarray | 1380.9 | [Link](https://leetcode.com/problems/longest-fibonacci-subarray/) | [View](./3708.longest-fibonacci-subarray.cpp) |
-| 3709 | Design Exam Scores Tracker | 1647.5 | [Link](https://leetcode.com/problems/design-exam-scores-tracker/) | [View](./3709.design-exam-scores-tracker.cpp) |
-| 3710 | Maximum Partition Factor | 2135.1 | [Link](https://leetcode.com/problems/maximum-partition-factor/) | [View](./3710.maximum-partition-factor.cpp) |
-<!-- LEETCODE_TABLE_END -->
+Browse this contest on the site: https://cyc6221.github.io/leetcode/#/contests
+
+LeetCode contest page: https://leetcode.com/contest/biweekly-contest-167/
+
+The generated problem table that used to live here has moved to the site.

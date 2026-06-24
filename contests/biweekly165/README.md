@@ -1,12 +1,9 @@
 # biweekly165
 
-<!-- LEETCODE_TABLE_START -->
-## Problem List
+Contest solution files live in this folder.
 
-| ID | Title | Rating | Link | Code |
-|:--:|-------|:------:|:----:|:----:|
-| 3678 | Smallest Absent Positive Greater Than Average | 1306.1 | [Link](https://leetcode.com/problems/smallest-absent-positive-greater-than-average/) | [View](./3678.smallest-absent-positive-greater-than-average.cpp) |
-| 3679 | Minimum Discards To Balance Inventory | 1638.9 | [Link](https://leetcode.com/problems/minimum-discards-to-balance-inventory/) | [View](./3679.minimum-discards-to-balance-inventory.cpp) |
-| 3680 | Generate Schedule | 2377.9 | [Link](https://leetcode.com/problems/generate-schedule/) | [View](./3680.generate-schedule.cpp) |
-| 3681 | Maximum Xor Of Subsequences | 2026.8 | [Link](https://leetcode.com/problems/maximum-xor-of-subsequences/) | [View](./3681.maximum-xor-of-subsequences.cpp) |
-<!-- LEETCODE_TABLE_END -->
+Browse this contest on the site: https://cyc6221.github.io/leetcode/#/contests
+
+LeetCode contest page: https://leetcode.com/contest/biweekly-contest-165/
+
+The generated problem table that used to live here has moved to the site.
