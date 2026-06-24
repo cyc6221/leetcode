@@ -2,8 +2,7 @@ import filecmp
 import shutil
 from pathlib import Path
 
-from .blocks import replace_block
-from .generator import extract_info, generate_problem_summary, generate_problem_table
+from .generator import extract_info
 from .paths import PROBLEMS_DIR, ROOT_DIR
 from .ratings import RATING_BUCKETS, UNRATED_BUCKET, rating_bucket_slug, ratings_map
 
@@ -11,10 +10,7 @@ REPO_ROOT = Path(ROOT_DIR)
 PROBLEMS_ROOT = Path(PROBLEMS_DIR)
 LEGACY_GOALS_ROOT = REPO_ROOT / "goals"
 
-PROBLEM_SUMMARY_START = "<!-- LEETCODE_PROBLEM_SUMMARY_START -->"
-PROBLEM_SUMMARY_END = "<!-- LEETCODE_PROBLEM_SUMMARY_END -->"
-PROBLEM_TABLE_START = "<!-- LEETCODE_PROBLEM_TABLE_START -->"
-PROBLEM_TABLE_END = "<!-- LEETCODE_PROBLEM_TABLE_END -->"
+SITE_URL = "https://cyc6221.github.io/leetcode/"
 
 
 def ensure_problem_dirs() -> None:
@@ -59,15 +55,13 @@ def migrate_goals_to_problems() -> int:
 def _problems_readme_template() -> str:
     return "\n".join(
         [
-            "# LeetCode Problems by Rating",
+            "# LeetCode Problems",
             "",
-            "Solutions are grouped by LeetCode contest rating ranges.",
+            "Standalone solved problems are grouped by LeetCode contest rating buckets.",
             "",
-            PROBLEM_SUMMARY_START,
-            PROBLEM_SUMMARY_END,
+            f"Browse, search, sort, and preview code on the site: {SITE_URL}#/problems",
             "",
-            PROBLEM_TABLE_START,
-            PROBLEM_TABLE_END,
+            "The generated table that used to live here has moved to the site.",
             "",
         ]
     )
@@ -76,10 +70,7 @@ def _problems_readme_template() -> str:
 def update_problems_readme() -> None:
     ensure_problem_dirs()
     readme_path = PROBLEMS_ROOT / "README.md"
-    content = readme_path.read_text(encoding="utf-8") if readme_path.exists() else _problems_readme_template()
-    content = replace_block(content, PROBLEM_SUMMARY_START, PROBLEM_SUMMARY_END, generate_problem_summary())
-    content = replace_block(content, PROBLEM_TABLE_START, PROBLEM_TABLE_END, generate_problem_table(PROBLEMS_ROOT))
-    readme_path.write_text(content, encoding="utf-8")
+    readme_path.write_text(_problems_readme_template(), encoding="utf-8")
     print(f"Updated {readme_path}")
 
 
@@ -96,10 +87,12 @@ def sync_root_readme() -> None:
             "- `contests/`: contest archive grouped by weekly or biweekly contest.",
             "- `codebook/`: reusable algorithm notes and snippets.",
             "",
-            "## Lists",
+            "## Browse",
             "",
-            "- [Problem list by rating](./problems/)",
-            "- [Contest archive](./contests/)",
+            f"- [Interactive site]({SITE_URL})",
+            "- [Problem folders](./problems/)",
+            "- [Contest folders](./contests/)",
+            "- [Codebook](./codebook/)",
             "",
             "## Commands",
             "",
@@ -107,12 +100,9 @@ def sync_root_readme() -> None:
             "python -m scripts.cli all",
             "python -m scripts.cli update-problems",
             "python -m scripts.cli update-contests",
+            "python -m scripts.cli update-codebook",
             "python -m scripts.cli update-site",
             "```",
-            "",
-            PROBLEM_SUMMARY_START,
-            generate_problem_summary(),
-            PROBLEM_SUMMARY_END,
             "",
         ]
     )
