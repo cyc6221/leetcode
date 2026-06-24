@@ -86,6 +86,20 @@ python -m scripts.cli all
 - Do not commit local experiments, generated site files, or untracked work unless the user explicitly asks.
 - Push only after confirming the commit split is clean.
 
+## GitHub PR Flow
+
+- Use the current work branch for follow-up fixes when a PR is already open for that branch.
+- Check `git status --short --branch` and inspect the intended diff once before staging.
+- Do not repeatedly run setup checks in the same publish workflow:
+  - verify `gh --version` and `gh auth status` only once unless a command fails with an auth/tooling error,
+  - verify the PR with `gh pr view` once after creating or updating it.
+- Prefer explicit path staging; do not use `git add -A` unless the whole worktree is intentionally in scope.
+- After committing, push the current branch with `git push -u origin <branch>` when tracking is missing, otherwise `git push` is enough.
+- Always write a non-empty PR body with at least `Summary` and `Validation` sections.
+- When using `gh pr create` or `gh pr edit` with a multiline body, write the body to a temporary Markdown file and pass `--body-file`; do not pass multiline Markdown as an inline PowerShell argument.
+- If the GitHub connector returns `403 Resource not accessible by integration`, immediately use the authenticated `gh` fallback instead of retrying the connector.
+- If a PR already exists, update that PR body instead of opening a duplicate PR.
+
 ## Branch Rules
 
 - Keep `main` as the primary branch.
