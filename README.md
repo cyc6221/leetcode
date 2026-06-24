@@ -14,6 +14,7 @@ Personal LeetCode solutions written in C++.
 - [Problem folders](./problems/)
 - [Contest folders](./contests/)
 - [Codebook](./codebook/)
+- [Study resources](./resources.md)
 
 ## Commands
 

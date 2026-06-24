@@ -93,6 +93,7 @@ def sync_root_readme() -> None:
             "- [Problem folders](./problems/)",
             "- [Contest folders](./contests/)",
             "- [Codebook](./codebook/)",
+            "- [Study resources](./resources.md)",
             "",
             "## Commands",
             "",

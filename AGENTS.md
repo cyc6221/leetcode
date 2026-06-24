@@ -27,10 +27,11 @@ These rules capture the workflow for maintaining this LeetCode repository.
 - README files must stay short.
 - Do not use README files as storage for generated lists, summary tables, or problem tables.
 - Generated lists, counts, and code previews belong in the `docs/` site.
+- Curated external study links belong in root `resources.md`, not in folder READMEs.
 - Folder READMEs may describe the folder and link to the site.
 - Root `README.md` should only contain:
   - a short repo description,
-  - links to the site and main folders,
+  - links to the site, `resources.md`, and main folders,
   - commands.
 
 ## Maintenance Commands
