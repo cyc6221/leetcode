@@ -24,15 +24,14 @@ These rules capture the workflow for maintaining this LeetCode repository.
 
 ## README Rules
 
-- The root `README.md` must stay short.
-- Do not put the full problem list on the homepage; it will eventually become too large.
-- The full standalone problem list belongs in `problems/README.md`, so GitHub shows it when opening the `problems/` folder.
-- Contest lists belong in `contests/README.md` and each contest folder README.
+- README files must stay short.
+- Do not use README files as storage for generated lists, summary tables, or problem tables.
+- Generated lists, counts, and code previews belong in the `docs/` site.
+- Folder READMEs may describe the folder and link to the site.
 - Root `README.md` should only contain:
   - a short repo description,
-  - links to `problems/` and `contests/`,
-  - commands,
-  - summary counts.
+  - links to the site and main folders,
+  - commands.
 
 ## Maintenance Commands
 
@@ -41,14 +40,16 @@ Run commands from the repository root.
 ```bash
 python -m scripts.cli update-problems
 python -m scripts.cli update-contests
+python -m scripts.cli update-codebook
 python -m scripts.cli update-site
 python -m scripts.cli all
 ```
 
-- `update-problems` updates `problems/README.md` and the root `README.md`.
-- `update-contests` updates contest READMEs and `contests/README.md`.
+- `update-problems` updates problem entry READMEs.
+- `update-contests` updates contest entry READMEs.
+- `update-codebook` updates the codebook entry README.
 - `update-site` updates the generated GitHub Pages data in `docs/assets/data.js`.
-- `all` runs problem, contest, and site updates.
+- `all` runs problem, contest, codebook, and site updates.
 - Rating data is fetched from `zerotrac/leetcode_problem_rating`.
 
 ## Website Rules
@@ -57,6 +58,7 @@ python -m scripts.cli all
 - Keep the site as a lightweight static table app; avoid adding frontend build tooling unless the user asks.
 - For table UI-only site changes, edit `docs/index.html`, `docs/assets/app.js`, and `docs/assets/styles.css` directly.
 - For full code view changes, keep `docs/code.html`, `docs/assets/code.js`, and `docs/assets/highlight.js` in sync with the table preview behavior.
+- Put generated problem, contest, and codebook browsing views in the site rather than README tables.
 - Regenerate site data with `python -m scripts.cli update-site` only when repository data changes.
 - Preview locally with `python -m http.server 8000 -d docs`.
 
@@ -83,6 +85,20 @@ python -m scripts.cli all
 - Stage explicit paths when untracked or unrelated files exist.
 - Do not commit local experiments, generated site files, or untracked work unless the user explicitly asks.
 - Push only after confirming the commit split is clean.
+
+## GitHub PR Flow
+
+- Use the current work branch for follow-up fixes when a PR is already open for that branch.
+- Check `git status --short --branch` and inspect the intended diff once before staging.
+- Do not repeatedly run setup checks in the same publish workflow:
+  - verify `gh --version` and `gh auth status` only once unless a command fails with an auth/tooling error,
+  - verify the PR with `gh pr view` once after creating or updating it.
+- Prefer explicit path staging; do not use `git add -A` unless the whole worktree is intentionally in scope.
+- After committing, push the current branch with `git push -u origin <branch>` when tracking is missing, otherwise `git push` is enough.
+- Always write a non-empty PR body with at least `Summary` and `Validation` sections.
+- When using `gh pr create` or `gh pr edit` with a multiline body, write the body to a temporary Markdown file and pass `--body-file`; do not pass multiline Markdown as an inline PowerShell argument.
+- If the GitHub connector returns `403 Resource not accessible by integration`, immediately use the authenticated `gh` fallback instead of retrying the connector.
+- If a PR already exists, update that PR body instead of opening a duplicate PR.
 
 ## Branch Rules
 

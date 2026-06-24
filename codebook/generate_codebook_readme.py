@@ -1,28 +1,12 @@
-import os
+import sys
+from pathlib import Path
 
-def list_cpp_files(base_path):
-    content = "# Codebook Index\n\n"
-    for folder in sorted(os.listdir(base_path)):
-        full_path = os.path.join(base_path, folder)
-        if os.path.isdir(full_path) and not folder.startswith('.'):
-            section = f"## {folder}/\n"
-            entries = []
-            for file in sorted(os.listdir(full_path)):
-                if file.endswith(".cpp"):
-                    rel_path = f"./{folder}/{file}"
-                    entries.append(f"- [{file}]({rel_path})")
-            if entries:
-                section += "\n".join(entries) + "\n\n"
-                content += section
-    return content
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
-def update_readme():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    index_md = list_cpp_files(base_dir)
-    readme_path = os.path.join(base_dir, "README.md")
-    with open(readme_path, "w", encoding="utf-8") as f:
-        f.write(index_md)
-    print("✅ Codebook README.md updated successfully.")
+from scripts.codebook import update_codebook_readme
+
 
 if __name__ == "__main__":
-    update_readme()
+    update_codebook_readme()
