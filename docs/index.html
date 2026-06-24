@@ -17,6 +17,7 @@
         <nav class="tabs" aria-label="Views">
           <button class="tab is-active" type="button" data-view="problems">Problems</button>
           <button class="tab" type="button" data-view="contests">Contests</button>
+          <button class="tab" type="button" data-view="codebook">Codebook</button>
         </nav>
       </div>
     </header>
@@ -38,6 +39,29 @@
         <div class="stat">
           <span class="stat-label">Contest Code</span>
           <strong id="stat-contest-code">0</strong>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Codebook</span>
+          <strong id="stat-codebook">0</strong>
+        </div>
+      </section>
+
+      <section class="summary-panel" aria-label="Problem count summary">
+        <div class="summary-heading">
+          <h2>Problem Count Summary</h2>
+          <span id="summary-total">0 total</span>
+        </div>
+        <div class="summary-scroll">
+          <table class="summary-table">
+            <thead>
+              <tr>
+                <th>Rating Range</th>
+                <th>Tier</th>
+                <th>Count</th>
+              </tr>
+            </thead>
+            <tbody id="summary-body"></tbody>
+          </table>
         </div>
       </section>
 

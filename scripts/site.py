@@ -4,13 +4,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .paths import CONTESTS_DIR, PROBLEMS_DIR, ROOT_DIR
-from .ratings import RATING_BUCKETS, UNRATED_BUCKET, rating_bucket
+from .ratings import RATING_BUCKETS, UNRATED_BUCKET, rating_bucket, ratings_map
 
 REPO_ROOT = Path(ROOT_DIR)
 PROBLEMS_ROOT = Path(PROBLEMS_DIR)
 CONTESTS_ROOT = Path(CONTESTS_DIR)
+CODEBOOK_ROOT = REPO_ROOT / "codebook"
 DOCS_ROOT = REPO_ROOT / "docs"
 ASSETS_ROOT = DOCS_ROOT / "assets"
+DATA_PATH = ASSETS_ROOT / "data.js"
 GITHUB_BLOB_BASE = "https://github.com/cyc6221/leetcode/blob/main"
 
 
@@ -42,46 +44,39 @@ def _extract_site_info(filename: str) -> tuple[str | None, str | None, str | Non
     return qid, title, kebab_title
 
 
-def _parse_rating(raw: str) -> float | None:
-    raw = raw.strip()
-    if raw in {"", "-"}:
-        return None
-    try:
-        return float(raw)
-    except ValueError:
-        return None
-
-
-def _read_table_rows(path: Path) -> list[list[str]]:
-    if not path.exists():
-        return []
-
-    rows = []
-    for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
-        stripped = line.strip()
-        if not stripped.startswith("|") or stripped.startswith("|:") or stripped.startswith("|-"):
-            continue
-        columns = [column.strip() for column in stripped.strip("|").split("|")]
-        rows.append(columns)
-    return rows
-
-
-def _read_cached_ratings() -> dict[int, float]:
+def _read_existing_site_ratings() -> dict[int, float]:
     ratings: dict[int, float] = {}
+    if not DATA_PATH.exists():
+        return ratings
 
-    for columns in _read_table_rows(PROBLEMS_ROOT / "README.md"):
-        if len(columns) >= 4 and columns[2].isdigit():
-            rating = _parse_rating(columns[0])
-            if rating is not None:
-                ratings[int(columns[2])] = rating
+    prefix = "window.LEETCODE_IO_DATA = "
+    raw = DATA_PATH.read_text(encoding="utf-8", errors="replace").strip()
+    if not raw.startswith(prefix) or not raw.endswith(";"):
+        return ratings
 
-    for columns in _read_table_rows(CONTESTS_ROOT / "README.md"):
-        if len(columns) >= 5 and columns[1].isdigit():
-            rating = _parse_rating(columns[3])
-            if rating is not None:
-                ratings[int(columns[1])] = rating
+    try:
+        data = json.loads(raw[len(prefix) : -1])
+    except json.JSONDecodeError:
+        return ratings
+
+    for item in [*data.get("problems", []), *data.get("contests", [])]:
+        problem_id = item.get("id")
+        rating = item.get("rating")
+        if isinstance(problem_id, int) and isinstance(rating, (int, float)):
+            ratings[problem_id] = float(rating)
 
     return ratings
+
+
+def _rating_source() -> dict[int, float]:
+    try:
+        return ratings_map()
+    except Exception as exc:
+        fallback = _read_existing_site_ratings()
+        if fallback:
+            print(f"Warning: using existing site ratings because rating fetch failed: {exc}")
+            return fallback
+        raise
 
 
 def _relative_path(path: Path) -> str:
@@ -202,6 +197,30 @@ def _collect_contests(ratings: dict[int, float]) -> list[dict]:
     return entries
 
 
+def _collect_codebook() -> list[dict]:
+    if not CODEBOOK_ROOT.exists():
+        return []
+
+    entries = []
+    for path in sorted(CODEBOOK_ROOT.rglob("*.cpp")):
+        if not path.is_file():
+            continue
+        relative_parts = path.relative_to(CODEBOOK_ROOT).parts
+        group = relative_parts[0] if len(relative_parts) > 1 else "root"
+        entries.append(
+            {
+                "key": f"codebook:{_relative_path(path)}",
+                "title": path.name,
+                "group": group,
+                "path": _relative_path(path),
+                "githubUrl": _github_url(path),
+                "code": _read_code(path),
+            }
+        )
+    entries.sort(key=lambda item: (item["group"].lower(), item["title"].lower()))
+    return entries
+
+
 def _tier_summary(problems: list[dict]) -> list[dict]:
     buckets = [*RATING_BUCKETS, UNRATED_BUCKET]
     counts = {bucket[0]: 0 for bucket in buckets}
@@ -220,9 +239,10 @@ def _tier_summary(problems: list[dict]) -> list[dict]:
 
 
 def build_site_data() -> dict:
-    ratings = _read_cached_ratings()
+    ratings = _rating_source()
     problems = _collect_problems(ratings)
     contests = _collect_contests(ratings)
+    codebook = _collect_codebook()
     contest_names = sorted({entry["contest"] for entry in contests})
 
     return {
@@ -231,11 +251,13 @@ def build_site_data() -> dict:
             "problemCount": len(problems),
             "contestSolutionCount": len(contests),
             "contestCount": len(contest_names),
+            "codebookCount": len(codebook),
             "ratedProblemCount": sum(1 for item in problems if item["rating"] is not None),
         },
         "tiers": _tier_summary(problems),
         "problems": problems,
         "contests": contests,
+        "codebook": codebook,
     }
 
 
@@ -245,9 +267,8 @@ def update_site_data() -> None:
     output = "window.LEETCODE_IO_DATA = "
     output += json.dumps(data, ensure_ascii=True, separators=(",", ":"))
     output += ";\n"
-    data_path = ASSETS_ROOT / "data.js"
-    data_path.write_text(output, encoding="utf-8")
-    print(f"Updated {data_path}")
+    DATA_PATH.write_text(output, encoding="utf-8")
+    print(f"Updated {DATA_PATH}")
 
 
 def update_site() -> None:

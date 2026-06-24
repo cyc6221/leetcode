@@ -4,6 +4,7 @@
   const data = window.LEETCODE_IO_DATA || {
     problems: [],
     contests: [],
+    codebook: [],
   };
   const highlightCode = window.CodeTools.highlightCode;
 
@@ -20,7 +21,7 @@
   };
 
   function allItems() {
-    return [...data.problems, ...data.contests];
+    return [...(data.problems || []), ...(data.contests || []), ...(data.codebook || [])];
   }
 
   function contestLabel(item) {
@@ -32,12 +33,15 @@
   }
 
   function itemMeta(item) {
-    const parts = [`#${item.qid}`];
+    const parts = item.qid ? [`#${item.qid}`] : ["Codebook"];
     if (item.ratingLabel && item.ratingLabel !== "-") {
       parts.push(`Rating ${item.ratingLabel}`);
     }
     if (item.tier) {
       parts.push(item.tier);
+    }
+    if (item.group) {
+      parts.push(item.group);
     }
     const contest = contestLabel(item);
     if (contest) {
@@ -47,7 +51,13 @@
   }
 
   function tableUrl(item) {
-    return item.key.startsWith("contest:") ? "./#/contests" : "./#/problems";
+    if (item.key.startsWith("contest:")) {
+      return "./#/contests";
+    }
+    if (item.key.startsWith("codebook:")) {
+      return "./#/codebook";
+    }
+    return "./#/problems";
   }
 
   function renderNotFound() {
@@ -63,13 +73,19 @@
   }
 
   function renderItem(item) {
-    document.title = `${item.qid}. ${item.title} | CYCcc in LeetCode`;
+    const title = item.qid ? `${item.qid}. ${item.title}` : item.title;
+    document.title = `${title} | CYCcc in LeetCode`;
     els.tableLink.href = tableUrl(item);
     els.meta.textContent = itemMeta(item);
     els.title.textContent = item.title;
     els.path.textContent = item.path;
     els.toolbarPath.textContent = item.path;
-    els.leetcodeLink.href = item.leetcodeUrl;
+    if (item.leetcodeUrl) {
+      els.leetcodeLink.hidden = false;
+      els.leetcodeLink.href = item.leetcodeUrl;
+    } else {
+      els.leetcodeLink.hidden = true;
+    }
     els.githubLink.href = item.githubUrl;
     els.output.innerHTML = highlightCode(item.code || "");
 

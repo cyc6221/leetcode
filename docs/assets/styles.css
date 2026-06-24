@@ -136,7 +136,7 @@ main {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 12px;
   margin-bottom: 18px;
 }
@@ -159,6 +159,55 @@ main {
 .stat strong {
   font-size: 24px;
   line-height: 1.1;
+}
+
+.summary-panel {
+  overflow: hidden;
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.summary-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.summary-heading h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 760;
+  letter-spacing: 0;
+}
+
+.summary-heading span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 680;
+}
+
+.summary-scroll {
+  overflow: auto;
+}
+
+.summary-table {
+  min-width: 560px;
+  box-shadow: none;
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 9px 14px;
+}
+
+.summary-table th:last-child,
+.summary-table td:last-child {
+  text-align: right;
 }
 
 .controls {
@@ -328,6 +377,11 @@ tbody tr.is-open > td:not(.code-cell) {
 .pill.high {
   background: #fff7ed;
   color: var(--amber);
+}
+
+.codebook-pill {
+  background: #ecfeff;
+  color: #155e75;
 }
 
 .tier-0000-1199-newbie {
